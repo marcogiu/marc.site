@@ -6,14 +6,14 @@ section {
 }
 
 .picture-profile {
-  margin: 20px 0 0 0px;
+  margin: 0px 0px 0 0;
   width: 250px;
 }
 
 .text {
   width: 400px;
   margin-top: 80px;
-  margin-left: 80px;
+  margin-left: 120px;
   font-size: 36px;
   line-height: 30px;
 }
@@ -21,5 +21,5 @@ section {
 .description {
   font-size: 20px;
   width: 200px;
-  margin-left: 80px;
+  margin-left: 150px;
 }

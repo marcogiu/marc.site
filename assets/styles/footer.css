@@ -1,0 +1,39 @@
+footer {
+  margin-top: 50px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section {
+  border: 1px solid black;
+
+}
+
+.middle-section {
+  border: 1px solid black;
+  margin: 0 300px;
+  
+}
+
+.right-section {
+  border: 1px solid black;
+  
+}
+
+
+
+
+
+
+/*
+.link-ext-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.twitter-icon {
+  width: 5%;
+}*/
