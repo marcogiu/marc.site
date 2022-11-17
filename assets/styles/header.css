@@ -1,0 +1,80 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  top: 20px;
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 80px;
+}
+
+.full-name {
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 1px;
+  left: 150px;
+  font-size: 35px;
+  color: #BBE3DB;
+  letter-spacing: 2px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.menu-link {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F2C826;
+}
+
+@media (max-width: 900px) {
+  .full-name {
+
+    margin-right: 168px;
+  }
+  .surname {
+    color: #F2C826;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-icon {
+    color: #F2C826;
+    border-radius: 5px;
+    font-size: 30px;
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .closebtn {
+    color: #BBE3DB;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+
+}
+/*
+@media (max-width: 560px) {
+  .full-name {
+
+  }
+
+}*/
