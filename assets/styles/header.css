@@ -12,13 +12,17 @@ header {
   margin-left: 80px;
 }
 
+.name-link {
+  text-decoration: none;
+  color: #BBE3DB;
+}
+
 .full-name {
   margin-left: 10px;
   margin-right: 30px;
   margin-top: 1px;
   left: 150px;
   font-size: 35px;
-  color: #BBE3DB;
   letter-spacing: 2px;
 }
 
@@ -55,9 +59,9 @@ header {
   .menu-icon {
     color: #F2C826;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 32px;
     position: absolute;
-    top: 18px;
+    top: 32px;
     right: 50px;
     display: flex;
     cursor: pointer;
@@ -71,10 +75,12 @@ header {
   }
 
 }
-/*
+
 @media (max-width: 560px) {
   .full-name {
+    font-size: 20px;
+    margin-left: 4px;
 
   }
 
-}*/
+}

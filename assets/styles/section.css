@@ -1,11 +1,25 @@
 section {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
+  justify-content: center;
 }
 
 .picture-profile {
-  margin: 100px 0 0 100px;
+  margin: 20px 0 0 0px;
   width: 250px;
 }
 
+.text {
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 80px;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.description {
+  font-size: 20px;
+  width: 200px;
+  margin-left: 80px;
+}
