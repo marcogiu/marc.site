@@ -1,20 +1,21 @@
-section {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: center;
-}
+
 
 .picture-profile {
-  margin: 0px 0px 0 0;
+  margin-left: 100px;
   width: 250px;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
 }
 
 .text {
   color: #F2C826;
   width: 400px;
   margin-top: 80px;
-  margin-left: 120px;
   font-size: 36px;
   line-height: 30px;
 }
@@ -23,5 +24,16 @@ section {
   color: #F2C826;
   font-size: 20px;
   width: 200px;
-  margin-left: 150px;
+}
+
+.project1 {
+  width: 150px;
+  height: 300px;
+  border: 2px solid white;
+}
+
+.project2 {
+  width: 150px;
+  height: 300px;
+  border: 2px solid white;
 }
