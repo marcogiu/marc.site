@@ -11,6 +11,7 @@ section {
 }
 
 .text {
+  color: #F2C826;
   width: 400px;
   margin-top: 80px;
   margin-left: 120px;
@@ -19,6 +20,7 @@ section {
 }
 
 .description {
+  color: #F2C826;
   font-size: 20px;
   width: 200px;
   margin-left: 150px;
