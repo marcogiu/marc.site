@@ -3,7 +3,10 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  /*
+  border: 2px solid white;
+  */
+  height: 15vh;
 }
 
 .logo {

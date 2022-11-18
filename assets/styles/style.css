@@ -4,36 +4,57 @@
   font-family: 'Bebas Neue', cursive;
 }
 
+
+body,
+.section1,
+.section2,
+.arrow {
+  border: 2px solid white;
+} 
+
 body {
   background-image: url("../img/background-yellow-black.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: max-content;
+  height: max-content; 
+  
 }
 
 .section1 {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: top;
   justify-content: center;
-  margin-bottom: 200px;
+  height: fit-content;
+  margin-left: auto;
+  height: 76vh;
 }
 
 .section2 {
-  margin-top: 200px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: top;
   justify-content: center;
+  height: 87vh;
 }
 
 .divide {
-  display: flex;
-  justify-content: center;
+  box-sizing: border-box;
+
 }
 
 .arrow {
-  width: 30%;
-  margin-left: 137px;
+  min-width: 2%;
+  display: block;
+  height: 8vh;
+  margin: auto;
+}
+
+
+.divide .arrow:hover {
+  transform: scale(1.15);
+  transition-duration: 0.4s;
 }

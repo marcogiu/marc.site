@@ -1,11 +1,22 @@
+/*
+.picture-profile,
+.my-description,
+.text,
+.description,
+.project1,
+.project2 {
+  border: 2px solid white;
+}*/
+
 
 
 .picture-profile {
-  margin-left: 100px;
-  width: 250px;
+  margin-right: -50px;
+  width: 20%;
+  object-fit: scale-down;
 }
 
-.home-description {
+.my-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,14 +24,17 @@
 }
 
 .text {
+  margin-top: -200px;
   color: #F2C826;
-  width: 400px;
-  margin-top: 80px;
+  width: fit-content;
   font-size: 36px;
   line-height: 30px;
 }
 
 .description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: #F2C826;
   font-size: 20px;
   width: 200px;
@@ -29,11 +43,35 @@
 .project1 {
   width: 150px;
   height: 300px;
-  border: 2px solid white;
 }
 
 .project2 {
   width: 150px;
   height: 300px;
-  border: 2px solid white;
+}
+
+
+/*
+@media (max-width: 750px) {
+  .picture-profile {
+    left: 135px;
+  }
+}
+
+@media (max-width: 650px) {
+  .picture-profile {
+    left: 120px;
+  }
+}
+
+@media (max-width: 550px) {
+  .picture-profile {
+    left: 105px;
+  }
+}
+
+@media (max-width: 450px) {
+  .picture-profile {
+    left: 50px;
+  }
 }
