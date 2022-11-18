@@ -14,7 +14,8 @@ header {
 
 .name-link {
   text-decoration: none;
-  color: #BBE3DB;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .full-name {
@@ -45,7 +46,7 @@ header {
 
 @media (max-width: 900px) {
   .full-name {
-
+    white-space: nowrap;
     margin-right: 168px;
   }
   .surname {
@@ -68,10 +69,7 @@ header {
   }
 
   .closebtn {
-    color: #BBE3DB;
-    position: absolute;
-    top: 10px;
-    right: 50px;
+    color: #BBE3DB;margin-top: 12px;
   }
 
 }
@@ -79,8 +77,18 @@ header {
 @media (max-width: 560px) {
   .full-name {
     font-size: 20px;
-    margin-left: 4px;
+    margin-left: 20px;
 
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
   }
 
 }
