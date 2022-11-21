@@ -3,9 +3,9 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /*
-  border: 2px solid white;
-  */
+  
+  border: 2px solid black;
+  
   height: 15vh;
 }
 
@@ -18,7 +18,7 @@ header {
 
 .name-link {
   text-decoration: none;
-  color: black;
+  color: #020826;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -45,7 +45,7 @@ header {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #F2C826;
+  color: #8c7851;
 }
 
 @media (max-width: 900px) {
@@ -73,7 +73,8 @@ header {
   }
 
   .closebtn {
-    color: #BBE3DB;margin-top: 12px;
+    color: black;
+    margin-top: 12px;
   }
 
 }

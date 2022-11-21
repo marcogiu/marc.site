@@ -26,13 +26,13 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #638E97;
+  color: black;
   display: block;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #000000;
+  color: white;
 }
 
 .overlay .closebtn {

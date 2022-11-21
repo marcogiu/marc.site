@@ -1,26 +1,27 @@
-/*
+
 .picture-profile,
 .my-description,
 .text,
 .description,
 .project1,
 .project2 {
-  border: 2px solid white;
-}*/
-
+  border: 2px solid black;
+}
 
 
 .picture-profile {
-  margin-right: -50px;
   width: 20%;
+  
   object-fit: scale-down;
 }
 
 .my-description {
+  object-fit: scale-down;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 200px;
+  text-align: center;
 }
 
 .text {
@@ -41,11 +42,16 @@
 }
 
 .project1 {
-  width: 150px;
-  height: 300px;
+  margin: auto;
+  position: relative;
+  right: 100px;
+  width: 300px;
+  height: 500px;
+  object-fit: contain;
 }
 
 .project2 {
+  margin: auto;
   width: 150px;
   height: 300px;
 }

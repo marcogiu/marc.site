@@ -8,16 +8,19 @@
 body,
 .section1,
 .section2,
-.arrow {
-  border: 2px solid white;
-} 
+.arrow,
+.skills  {
+  border: 2px solid black;
+}
 
 body {
+  /*
   background-image: url("../img/background-yellow-black.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: max-content; 
+  height: max-content; */
+  background-color: #f9f4ef;
   
 }
 
@@ -33,6 +36,15 @@ body {
 }
 
 .section2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  height: 91vh;
+}
+
+.skills {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
