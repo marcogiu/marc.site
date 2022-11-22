@@ -1,13 +1,4 @@
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  
-  border: 2px solid black;
-  
-  height: 15vh;
-}
+
 
 .logo {
   top: 20px;
@@ -18,7 +9,7 @@ header {
 
 .name-link {
   text-decoration: none;
-  color: #020826;
+  color: #fffffe;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -45,10 +36,16 @@ header {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #8c7851;
+  color: #abd1c6;
+  transition-delay: 3s;
 }
 
 @media (max-width: 900px) {
+
+  header {
+    height: auto;
+  }
+
   .full-name {
     white-space: nowrap;
     margin-right: 168px;
@@ -80,6 +77,11 @@ header {
 }
 
 @media (max-width: 560px) {
+
+  header {
+    height: auto;
+  }
+
   .full-name {
     font-size: 20px;
     margin-left: 20px;
