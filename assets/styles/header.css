@@ -1,23 +1,28 @@
-
+/*
+.logo,
+.name-link,
+.full-name,
+.menu-list {
+  border: 1px solid black;
+}*/
 
 .logo {
-  top: 20px;
+  padding-left: auto;
   width: 100px;
-  margin-top: 15px;
-  margin-left: 80px;
+  margin-top: 0px;
+  margin-left: 120px;
 }
 
 .name-link {
   text-decoration: none;
-  color: #fffffe;
+  color: #0d0d0d;
   font-family: 'Bebas Neue', cursive;
 }
 
 .full-name {
-  margin-left: 10px;
-  margin-right: 30px;
+  margin-left: 100px;
+  margin-right: auto;
   margin-top: 1px;
-  left: 150px;
   font-size: 35px;
   letter-spacing: 2px;
 }
@@ -27,16 +32,18 @@
 }
 
 .menu-list {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   list-style-type: none;
-  gap: 15px;
+  gap: 100px;
 }
 
 .menu-link {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #abd1c6;
+  color: #2a2a2a;
   transition-delay: 3s;
 }
 
@@ -46,12 +53,17 @@
     height: auto;
   }
 
+  .logo {
+    width: 90px;
+    margin: 2px 0;
+  }
+
   .full-name {
     white-space: nowrap;
     margin-right: 168px;
   }
   .surname {
-    color: #F2C826;
+    color: #0d0d0d;
   }
 
   .menu-list {
@@ -59,11 +71,11 @@
   }
 
   .menu-icon {
-    color: #F2C826;
+    color: #0d0d0d;
     border-radius: 5px;
     font-size: 32px;
     position: absolute;
-    top: 32px;
+    top: 20px;
     right: 50px;
     display: flex;
     cursor: pointer;
@@ -71,12 +83,13 @@
 
   .closebtn {
     color: black;
-    margin-top: 12px;
+    margin-top:1px;
+    margin-right: 3px;
   }
 
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
 
   header {
     height: auto;
@@ -90,6 +103,7 @@
 
   .logo {
     width: 80px;
+    margin: 2px 0;
   }
 
   .menu-icon {

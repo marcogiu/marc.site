@@ -4,7 +4,7 @@
   font-family: 'Bebas Neue', cursive;
 }
 
-
+/*
 body,
 header,
 .section1,
@@ -12,16 +12,10 @@ header,
 .arrow,
 .skills  {
   border: 2px solid black;
-}
+}*/
 
 body {
-  /*
-  background-image: url("../img/background-yellow-black.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: max-content; */
-  background-color: #004643;
+  background: rgb(255,142,60);
   
 }
 
@@ -29,8 +23,10 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   height: 15vh;
+
+  background-color: #eff0f3;
 }
 
 .section1 {
