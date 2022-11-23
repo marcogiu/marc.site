@@ -1,140 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Marco Giuliani | Full Stack developer</title>
+    <title>Marco Giuliani | Full Stack Web Developer </title>
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="./assets/styles/header.css">
-    <link rel="stylesheet" href="./assets/styles/section.css">
-    <link rel="stylesheet" href="./assets/styles/footer.css">
-    <link rel="stylesheet" href="./assets/styles/menu.css">
-    <link rel="stylesheet" href="./assets/styles/section2.css">
+    <link rel="stylesheet" href="./assets/styles/headerpopup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header>
-      <img class="logo" src="./assets/img/logo-finale.png" alt="">
-      <div class="full-name">
-        <a class="name-link" href="#">
-       <span class="name">MARCO</span> <span class="surname">GIULIANI</span> </a>
-      </div>
-      <ul class="menu-list">
-        <li><a class="menu-link" href="#project">PROJECT</a></li>
-        <li><a class="menu-link" href="">CONTACT</a></li>
-      </ul>
+      <a href="#"><img class="logo" src="./assets/img/logo-finale.png" alt="logo"></a>
       
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#" onclick="closeNav()">HOME</a>
-          <a href="#project" onclick="closeNav()">PROJECT</a>
-          <a href="#skills" onclick="closeNav()">SKILLS</a>
-          <a href="#" onclick="closeNav()">ABOUT</a>
-          <a href="#" onclick="closeNav()">CONTACT</a>
+      <ul class="header-link">
+        <li><a class="link" href="#works">WORKS</a></li>
+        <li><a class="link" href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&#8801;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">HOME</a>
+          <a href="#works">WORKS</a>
+          <a href="#contact">CONTACT</a>
         </div>
       </div>
-      <span class="menu-icon" onclick="openNav()">&#9776; </span>
       
       <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "100%";
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
       }
-      
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
+  
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
       }
-      </script>    
-  </header>
+      </script>
+    </header>
+    <section>
 
-  <section id="about me" class="section1">
-      <div class="my-description">
-      <div class="text">
-        FULL STACK WEB DEVELOPER 
-      </div>
-      <div class="description">
-      </div>
-    </div>
-  </section>
+    </section>
+    <footer>
 
-  <div class="divide">
-    <a href='#project'>
-      <img class="arrow" src="./assets/img/white-arrow.svg" alt="arrow down">
-    </a>
-  </div>
- 
-
-  <section id="project" class="section2">
-    <ul class="project-list">
-    <li>
-      <div class="card1">      
-    <img src="./assets/img/project1.jpg" alt="" class="img1-project">
-    </div>
-    </li>
-    <li>
-    <div class="card2">
-      <img src="./assets/img/project2.png" alt="" class="img2-project">
-    </div>
-    </li>
-    <li>
-    <div class="card3">
-      <img src="./assets/img/project3.png" alt="" class="img3-project">
-    </div>
-    </li>
-    </ul>
-  </section>
-
-  <div class="divide">
-    <a href='#skills'>
-     <img class="arrow" src="./assets/img/white-arrow.svg" alt="arrow down">
-    </a>
-  </div>
-
-  <section id="skills" class="section3">
-    <img class="project1" src="" alt="">
-    <img class="project2" src="" alt="">
-
-  </section>
-
-  <div class="divide">
-    <a href='#skills'>
-     <img class="arrow" src="./assets/img/white-arrow.svg" alt="arrow down">
-    </a>
-  </div>
-  
-
-
-
-  <footer>
-    <div class="left-section">empty</div>
-
-    <div class="middle-section">link
-      <ul></ul>
-      <div>email e phone</div>
-      <div>copyright...</div>
-    </div>
-
-    <div class="right-section">
-      credits
-    </div>
-  </footer>
-
-    
-
-
-  
-  <!-- 
-    <ul class="link-ext-list">
-    <li><a href="https://twitter.com/Marco02351182"><img class="twitter-icon" src="./assets/img/Twitter-icon.png" alt=""></a></li>
-    <li><a href="https://twitter.com/Marco02351182"><img src="" alt=""></a></li>
-    <li><a href="https://twitter.com/Marco02351182"><img src="" alt=""></a></li>
-    <li><a href="https://twitter.com/Marco02351182"><img src="" alt=""></a></li>
-  </ul>
--->
-
-
+    </footer>
   </body>
 </html>
