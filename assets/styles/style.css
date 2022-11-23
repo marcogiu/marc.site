@@ -38,6 +38,34 @@ header {
   display: none;
 }
 
+section {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-btn {
+  font-size: 36px;
+}
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   .header-link {
     display: none;
