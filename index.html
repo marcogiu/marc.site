@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/headerpopup.css">
+    <link rel="stylesheet" href="./assets/styles/popup-about-me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,38 +13,25 @@
   <body>
     <header>
       <a href="#"><img class="logo" src="./assets/img/logo-finale.png" alt="logo"></a>
-      
       <ul class="header-link">
         <li><a class="link" href="#works">WORKS</a></li>
         <li><a class="link" href="#contact">CONTACT</a></li>
       </ul>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">&#8801;</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">HOME</a>
-          <a href="#works">WORKS</a>
-          <a href="#contact">CONTACT</a>
-        </div>
+      <a class="hamburger" href="#popup-header"> &#8801;</a>
+
+      <div id="popup-header" class="header-overlay">
+          <div class="popup0">
+            <a class="close-menu" href="#">&times;</a>
+            <div class="menu">
+                <ul class="link-menu">
+                  <li><a class="link" href="#">HOME</a></li>
+                  <li><a class="link" href="#works">WORKS</a></li>
+                  <li><a class="link" href="#contact">CONTACT</a></li>
+                </ul>
+              
+            </div>
+          </div>
       </div>
-      
-      <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-  
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-      </script>
     </header>
 
     <section>
