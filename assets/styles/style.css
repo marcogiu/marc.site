@@ -6,6 +6,7 @@
 
 body {
   background-color: #ff8e3c;
+  height: auto;
 }
 
 header {
@@ -40,6 +41,7 @@ header {
 
 section {
   margin-top: 50px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -58,6 +60,32 @@ section {
 
 .about-me-btn {
   font-size: 36px;
+  width: fit-content;
+  padding: 2px 20px;
+}
+
+.content {
+  color: #0d0d0d;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 3px;
+  background-color: #eff0f3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-img {
+  width: 50px;
+}
+
+.list-link-ext {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -73,5 +101,13 @@ section {
 
   .logo {
     width: 50px;
+  }
+
+  .profile-picture {
+    width: 150px;
+  }
+
+  .about-me-btn {
+    font-size: 16px;
   }
 }
