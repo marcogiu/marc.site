@@ -15,6 +15,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  height: 15vh;
 }
 
 .logo {
@@ -35,8 +36,6 @@ header {
   font-size: 32px;
 }
 
-
-
 section {
   margin-top: 50px;
   margin-bottom: 0;
@@ -44,11 +43,11 @@ section {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 65vh;
+  height: 75vh;
 }
 s
 section h1 {
-  font-size: 48px;
+  font-size: 50px;
   color: #0d0d0d;
 }
 
@@ -64,6 +63,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  height: 10vh;
 }
 
 .footer-img {
@@ -74,6 +74,36 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+
+/*                   PHONES       */
+@media screen and (max-width: 600px) {
+  .header-link {
+    visibility: hidden;
+  }
+
+}
+
+/*             TABLETS            */
+@media screen and (max-width: 768px) {
+
+
+}
+
+
+
+/*                LAPTOPS          */
+@media screen and (max-width: 992px){
+
+
+}
+
+
+/*                 LARGE             */
+@media screen and (max-width: 1200px) {
+
+
 }
 
 
