@@ -162,6 +162,18 @@ footer {
     height: 77vh;
   }
 
+  .section2 {
+    height: 88vh;
+  }
+
+  .section3 {
+    height: 79vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
   .divide {
     height: 6vh;
   }
