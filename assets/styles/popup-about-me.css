@@ -1,5 +1,5 @@
 .profile-picture {
-  width: 300px;
+  width: 30em;
   border-radius: 20px;
   margin-right: 20px;
 }
@@ -31,7 +31,7 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  transition: opacity 0.5s;
   visibility: hidden;
   opacity: 0;
 }
@@ -41,12 +41,16 @@
 }
 
 .popup {
-  margin: 50px auto;
-  padding: 100px;
-  background: #eff0f3;
+  margin:  auto;
+  padding: 40px;
+  background-image: url("../img/about\ me\ \(1\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 5px;
-  width: 40%;
-  position: relative;
+  position: absolute;
+  top: 12%;
+  left: 21%;
+  z-index: 0;
   transition: all 5s ease-in-out;
 }
 
@@ -59,8 +63,8 @@
 
 .popup .close {
   position: absolute;
-  top: 10px;
-  right: 30px;
+  top: 0px;
+  right: 25px;
   transition: all 200ms;
   font-size: 60px;
   font-weight: bold;
@@ -73,4 +77,80 @@
 .popup .content {
   max-height: 20%;
   overflow: auto;
+}
+
+.about-me h1 {
+  font-size: 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.description p {
+  margin-right: 100px;
+  margin-top: 50px;
+  font-size: 2em;
+  width: 20em;
+  height: 15em;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+/*                   PHONES       */
+@media screen and (max-width: 600px) {
+  .popup {
+    padding: 10px;
+    width: 350px;
+    height: 550px;
+    background-image: url("../img/ABOUT\ ME\ \(2\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 27px;
+  }
+
+  .description p {
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: 0.8em;
+    width: 20em;
+    height: 40em;
+    text-align: center;
+    line-height: 1.4em;
+  }
+
+  .profile-picture {
+    width: 10em;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+
+  .description {
+    margin-top: 50em;
+    height: 52.5em;
+    width: 32.5em;
+  
+
+}
+
+/*             TABLETS            */
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+/*                LAPTOPS          */
+@media screen and (max-width: 992px){
+
+
+}
+
+
+/*                 LARGE             */
+@media screen and (max-width: 1200px) {
+
+
 }

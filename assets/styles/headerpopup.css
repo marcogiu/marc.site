@@ -61,9 +61,32 @@
   display: none;
 }
 
+
+/*                   PHONES       */
+@media screen and (max-width: 600px) {
+
+}
+
+/*             TABLETS            */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-block;
   }
+
+}
+
+
+
+/*                LAPTOPS          */
+@media screen and (max-width: 992px){
+
+
+}
+
+
+/*                 LARGE             */
+@media screen and (max-width: 1200px) {
+
+
 }
 
