@@ -11,7 +11,6 @@
   margin-right: 5em;
   border-radius: 1.5em;
   
-  border: 2px solid #0d0d0d;
 }
 
 .img1 , .img2 , .img3 {
@@ -19,6 +18,7 @@
   height: 40em;
   object-fit: cover;
   border-radius: 1.5em;
+  border: 2px solid #0d0d0d;
 }
 
 
@@ -59,6 +59,7 @@
   background: linear-gradient(229deg, #ff8e3c, #ffffff);
   color: white;
   transform: rotateY(180deg);
+  border: 2px solid #0d0d0d;
 }
 
 .card-content-back h1,
@@ -77,3 +78,28 @@
   color: #2a2a2a;
 
 }
+
+/*                   PHONES       */
+@media screen and (max-width: 600px) {
+
+}
+
+/*             TABLETS            */
+@media screen and (max-width: 768px) {
+}
+
+
+
+/*                LAPTOPS          */
+@media screen and (max-width: 992px){
+
+
+}
+
+
+/*                 LARGE             */
+@media screen and (max-width: 1200px) {
+
+
+}
+
