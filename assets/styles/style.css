@@ -7,7 +7,6 @@
 body {
   font-size: 10px;
   background-color: #ff8e3c;
-  height: 100vh;
 }
 
 header {
@@ -51,6 +50,17 @@ header {
   font-size: 4em;
   color: #0d0d0d;
   margin-bottom: 0.1em;
+}
+
+.right-sidebar {
+  height: 75vh;
+  vertical-align: middle;
+}
+
+.link-ext {
+  list-style-type: none;
+  margin-right: 20px;
+  line-height: 100px;
 }
 
 .divide {
@@ -102,17 +112,16 @@ header {
 .section2 {
   height: 90vh;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.img1 , .img2 , .img3 {
-  width: 35em;
-  height: 50em;
-  object-fit: contain;
+.section-title {
+  font-size: 5em;
 }
+
 
 
 .section3 {

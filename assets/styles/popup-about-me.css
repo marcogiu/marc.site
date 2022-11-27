@@ -50,7 +50,7 @@
   position: absolute;
   top: 12%;
   left: 21%;
-  z-index: 0;
+  z-index: 1;
   transition: all 5s ease-in-out;
 }
 
