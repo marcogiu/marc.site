@@ -76,7 +76,7 @@ header {
 .divide {
   position: relative;
   z-index: 0;
-  height: 10vh;
+  height: 11vh;
   background-color: #eff0f3;
 }
 
@@ -227,8 +227,11 @@ footer p {
     height: 20em;
     object-fit: contain;
     margin-right: 15em;
-    }
+  }
 
+  .right-sidebar {
+    display: none;
+  }
 
 }
 
