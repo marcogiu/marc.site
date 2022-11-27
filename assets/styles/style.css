@@ -15,7 +15,8 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 15%;
+  height: 15vh;
+  width: 100%;
 }
 
 .logo {
@@ -42,7 +43,7 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 75%;
+  height: 75vh;
   width: 100%;
 }
 
@@ -54,20 +55,28 @@ header {
 }
 
 .right-sidebar {
+  margin-left: -7em;
+  margin-right: 2em;
   height: 75vh;
-  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.icon {
+  width: 4em;
 }
 
 .link-ext {
   list-style-type: none;
-  margin-right: 20px;
-  line-height: 100px;
+  line-height: 30px;
 }
 
 .divide {
   position: relative;
-  z-index: -1;
-  height: 10%;
+  z-index: 0;
+  height: 10vh;
   background-color: #eff0f3;
 }
 
@@ -144,13 +153,19 @@ footer {
 }
 
 .footer-img {
+  margin-left: 20px;
   width: 50px;
 }
 
-.list-link-ext {
+.link-footer {
   list-style: none;
   display: flex;
   flex-direction: row;
+  gap: 20px;
+}
+
+footer p {
+  font-size: 1.6em;
 }
 
 
