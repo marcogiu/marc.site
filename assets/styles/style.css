@@ -77,7 +77,6 @@ header {
   position: relative;
   z-index: 0;
   height: 11vh;
-  background-color: #eff0f3;
 }
 
 .arrow {
@@ -91,10 +90,10 @@ header {
   margin: auto;
   width: 1.5em;
   height: 1.5em;
-  border-bottom: 3px solid black;
-  border-right: 3px solid black;
+  border-bottom: 3px solid #eff0f3;
+  border-right: 3px solid #eff0f3;
   transform: rotate(180deg);
-  animation: animate 2s infinite;
+  animation: animate 1s infinite;
 }
 
 .arrow span:nth-child(2) {
@@ -102,7 +101,7 @@ header {
 }
 
 .arrow span:nth-child(3) {
-  animation-delay: -0.4s;
+  animation-delay: -0.2s;
 }
 
 @keyframes animate {
@@ -133,13 +132,16 @@ header {
   font-size: 5em;
 }
 
-
-
 .section3 {
+  height: 90vh;
+}
+
+
+
+.section4 {
   height: 80vh;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 
@@ -185,23 +187,26 @@ footer p {
   }
 
   .section1 {
-    height: 77vh;
+    height: 82vh;
   }
 
   .section2 {
-    height: 88vh;
+    height: 92vh;
   }
 
   .section3 {
-    height: 79vh;
+    height: 92vh;
+  }
+  .section4 {
+    height: 82vh;
   }
 
   footer {
-    height: 15vh;
+    height: 18vh;
   }
 
   .divide {
-    height: 6vh;
+    height: 8vh;
   }
 
   .arrow {
@@ -211,8 +216,8 @@ footer p {
   .arrow span {
     width: 0.5em;
     height: 0.5em;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid #eff0f3;
+    border-right: 2px solid #eff0f3;
   }
   
 }

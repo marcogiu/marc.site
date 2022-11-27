@@ -1,6 +1,8 @@
 .works {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .card {
@@ -8,6 +10,7 @@
   width: 45em;
   height: 40em;
   perspective: 100em;
+  margin-left: 5em;
   margin-right: 5em;
   border-radius: 1.5em;
   
@@ -32,7 +35,7 @@
 }
 
 .card:hover .card-content {
-  transform: rotateY(180deg);
+  transform: rotatey(180deg);
 }
 
 .card-content-front,
@@ -47,7 +50,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -56,8 +59,7 @@
 }
 
 .card-content-back {
-  background: linear-gradient(229deg, #ff8e3c, #ffffff);
-  color: white;
+  background: #eff0f3;
   transform: rotateY(180deg);
   border: 2px solid #0d0d0d;
 }
@@ -86,6 +88,33 @@
 
 /*             TABLETS            */
 @media screen and (max-width: 768px) {
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .card {
+    width: 30em;
+    height: 25em;
+    
+  }
+  
+  .img1 , .img2 , .img3 {
+    width: 30em;
+    height: 25em;
+    margin-left: 150px;
+  }
+  
+  
+
+  
+
+
 }
 
 
