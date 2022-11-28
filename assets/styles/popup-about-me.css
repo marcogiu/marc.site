@@ -104,6 +104,11 @@
 
 /*                   PHONES       */
 @media screen and (max-width: 600px) {
+
+}
+
+/*             TABLETS            */
+@media screen and (max-width: 768px) {
   .popup {
     padding: 10px;
     width: 70%;
@@ -111,12 +116,13 @@
     background-image: url("../img/ABOUT\ ME\ \(2\).png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     top: 10%;
   }
 
   .description p {
     font-size: 1.5em;
-    width: 7em;
+    width: 8em;
     text-align: center;
     line-height: 1.2em;
   }
@@ -129,13 +135,6 @@
     margin-left: 6em;
   }
 
-
-  
-
-}
-
-/*             TABLETS            */
-@media screen and (max-width: 768px) {
 
 }
 
