@@ -1,5 +1,7 @@
 .profile-picture {
+  margin: auto;
   width: 30em;
+  object-fit: cover;
   border-radius: 20px;
   margin-right: 20px;
 }
@@ -42,15 +44,16 @@
 }
 
 .popup {
-  margin:  auto;
-  padding: 40px;
+  margin: auto;
+  padding: 8em;
+  width: 90em;
   background-image: url("../img/about\ me\ \(1\).png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   border-radius: 5px;
-  position: absolute;
-  top: 12%;
-  left: 21%;
+  position: relative;
+  top: 10%;
   z-index: 1;
   transition: all 5s ease-in-out;
 }
@@ -58,8 +61,8 @@
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
+  width: max-content;
 }
 
 .popup .close {
@@ -76,7 +79,7 @@
   color: #2a2a2a;
 }
 .popup .content {
-  max-height: 20%;
+  max-height: 100%;
   overflow: auto;
 }
 
@@ -87,15 +90,14 @@
 .description {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .description p {
-  margin-right: 100px;
-  margin-top: 50px;
-  font-size: 2em;
-  width: 20em;
-  height: 15em;
+  margin: auto;
+  font-size: 3em;
+  width: 15em;
   text-align: center;
   line-height: 1.4em;
 }
@@ -104,37 +106,30 @@
 @media screen and (max-width: 600px) {
   .popup {
     padding: 10px;
-    width: 350px;
-    height: 550px;
+    width: 70%;
+    height: 60vh;
     background-image: url("../img/ABOUT\ ME\ \(2\).png");
     background-repeat: no-repeat;
     background-size: cover;
-    top: 20%;
-    left: auto;
-   right: auto;  
+    top: 10%;
   }
 
   .description p {
-    margin-right: 100px;
-    margin-top: 50px;
-    font-size: 0.8em;
-    width: 20em;
-    height: 40em;
+    font-size: 1.5em;
+    width: 7em;
     text-align: center;
-    line-height: 1.4em;
+    line-height: 1.2em;
   }
 
   .profile-picture {
     width: 10em;
+    height: fit-content;
+    object-fit: scale-down;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-left: 6em;
   }
 
-  .description {
-    margin-top: 50em;
-    height: 52.5em;
-    width: 32.5em;
-  }
+
   
 
 }
