@@ -156,32 +156,38 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .icon-skill {
+    width: 7em;
+  }  
+
+
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
     top: -175px;
-    left: -175px;
+    left: -140px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
     top: -175px;
-    left: 175px;
+    left: 140px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    left: -175px;
+    left: -140px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 175px;
+    left: 140px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
     top: 175px;
-    left: -175px;
+    left: -140px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
     top: 175px;
-    left: 175px;
+    left: 140px;
   }
 
 
