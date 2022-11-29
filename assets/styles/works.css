@@ -35,7 +35,7 @@
 }
 
 .card:hover .card-content {
-  transform: rotatey(180deg);
+  transform: rotateY(180deg);
 }
 
 .card-content-front,

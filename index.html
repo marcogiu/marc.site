@@ -129,50 +129,57 @@
     </div>
 
     <section id="skills" class="section3">
+
       <h1 class="section-title">SKILLS</h1>
-      <div class="container">
-        <ul class="skill-list">
-          <li class="skill-element">
+
+      
+        <div class='skill-menu'>
+          <input class='toggle' id='menu' type='checkbox'>
+          <label class='style' for='menu'>
+            <img class="skill-img" src="./assets/img/freelancer-freelance-icon.png" alt="">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </label>
+          <a class='tab' href='#html'>
             <img class="icon-skill" src="./assets/img/html-icon.png" alt="">
             <span class="sub-skill">HTML</span>
-            <span class="skill-description">The HyperText Markup Language or HTML is the standard 
+            <span class="skill-description" id="html">The HyperText Markup Language or HTML is the standard 
             markup language for documents designed to be displayed in a web browser.</span>
-          </li>
-          <li class="skill-element">
+          </a>
+          <a class='tab' href='#css'>
             <img class="icon-skill" src="./assets/img/css-icon.png" alt="">
             <span class="sub-skill">CSS</span>
-            <span class="skill-description">CSS is a style sheet language 
+            <span class="skill-description" id="css">CSS is a style sheet language 
               used for describing the presentation of a document.</span>
-          </li>
-          <li class="skill-element">
+          </a>
+          <a class='tab' href='#sass'>
             <img class="icon-skill" src="./assets/img/sass-icon.png" alt="">
             <span class="sub-skill">SASS</span>
-            <span class="skill-description">Sass is the most mature, stable, 
+            <span class="skill-description" id="#sass">Sass is the most mature, stable, 
               and powerful professional grade CSS extension language in the world.</span>
-          </li>
-          <li class="skill-element">
+          </a>
+          <a class='tab' href='#bootstrap'>
             <img class="icon-skill" src="./assets/img/bootstrap-5-logo-icon.png" alt="">
             <span class="sub-skill">BOOTSTRAP</span>
-            <span class="skill-description">Bootstrap is a free and open-source CSS framework
+            <span class="skill-description" id="bootstrap">Bootstrap is a free and open-source CSS framework
                directed at responsive, mobile-first front-end web development. It contains HTML,
                 CSS and (optionally) JavaScript-based design templates for typography, forms,
                  buttons, navigation, and other interface components.</span>
-          </li>
-          <li class="skill-element">
+          </a>
+          <a class='tab' href='#github'>
             <img class="icon-skill" src="./assets/img/github-icon.png" alt="">
             <span class="sub-skill">GITHUB</span>
-            <span class="skill-description">The HyperText Markup Language or HTML is the standard 
-            markup language for documents designed to be displayed in a web browser.</span>
-          </li>
-          <li class="skill-element">
+            <span class="skill-description" id="github">GitHub is an Internet hosting service 
+              for software development and version control using Git.</span>
+          </a>
+          <a class='tab' href='#canva'>
             <img class="icon-skill" src="./assets/img/canva_logo_icon_168459.png" alt="">
             <span class="sub-skill">CANVA</span>
-            <span class="skill-description">The HyperText Markup Language or HTML is the standard 
-            markup language for documents designed to be displayed in a web browser.</span>
-          </li>
-         </ul>
-
-      </div>
+            <span class="skill-description" id="canva">Canva is an Australian graphic design platform that is used to 
+              create social media graphics, presentations, posters, documents and other visual content.</span>
+          </a>
+        </div><!-- menu -->
+      
+        
 
     </section>
 
@@ -191,9 +198,8 @@
 
     </section>
 
+
     <footer>
-      <a href="#"><img class="footer-img" src="./assets/img/logo-finale.png" alt=""></a>
-      
       <div >
         <ul class="link-footer">
           <li><a href="https://www.linkedin.com/in/marco-giuliani-2a20b4179/" class="ext" target="_blank"><img class="icon" src="./assets/img/linkedin-round-icon.svg" alt="linkedin"></a></li>
@@ -203,6 +209,10 @@
         </ul>
         
       </div>
+
+      <a href="#"><img class="footer-img" src="./assets/img/logo-finale.png" alt=""></a>
+      
+
       <div>
         <p>Copyright ©2022, All right reserved</p>
 
