@@ -1,0 +1,19 @@
+.section4 {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.contact-form {
+  border: 2px solid black;
+  background-image: url(/assets/img/contact-me.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 60vh;
+  border-radius: 5em;
+}

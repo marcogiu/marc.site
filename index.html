@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./assets/styles/popup-about-me.css">
     <link rel="stylesheet" href="./assets/styles/works.css">
     <link rel="stylesheet" href="./assets/styles/skills.css">
+    <link rel="stylesheet" href="./assets/styles/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <a href="#"><img class="logo" src="./assets/img/logo-finale.png" alt="logo"></a>
+      <a href="#"><img class="logo" src="./assets/img/logo Marco Giuliani.png" alt="logo"></a>
       <ul class="header-link">
         <li><a class="link" href="#works">WORKS</a></li>
         <li><a class="link" href="#skills">SKILLS</a></li>
@@ -137,6 +138,7 @@
           <input class='toggle' id='menu' type='checkbox'>
           <label class='style' for='menu'>
             <img class="skill-img" src="./assets/img/freelancer-freelance-icon.png" alt="">
+            <p>TAP ON ME!</p>
             <i class="fa fa-bars" aria-hidden="true"></i>
           </label>
           <div class="tab">
@@ -181,6 +183,20 @@
     <section id="contact" class="section4">
       
       <h1 class="section-title">CONTACT</h1>
+
+      <div class="contact-form">
+        <form class="contact" action="mailto:alice.lazzeri@hotmail.it" method="post" enctype="multipart/form-data" name="EmailForm">
+          <input type="text" name="contact- name" placeholder="Your first and last name" required>
+          <input type="email" name="contact-email" placeholder="Your email" required>
+          <input type="text" name="location" placeholder="Your location" required>
+          <textarea name="contact-message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+          <div class="contact-buttons">
+            <button class="send" type="submit" class="btn btn-primary">Submit</button>
+            <button class="send" type="reset" class="btn btn-primary">Reset</button>
+          </div>
+        </form>
+
+      </div>
 
     </section>
 

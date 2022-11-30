@@ -6,11 +6,11 @@
 
 body {
   font-size: 10px;
-  background-color: #ff8e3c;
+  background-color: #f9f4ef;
 }
 
 header {
-  background-color: #eff0f3;
+  background-color: #020826;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,7 +33,7 @@ header {
 
 .link {
   text-decoration: none;
-  color: #2a2a2a;
+  color: #fffffe;
   font-size: 32px;
 }
 
@@ -50,7 +50,7 @@ header {
 
 .section1 h3 {
   font-size: 4em;
-  color: #0d0d0d;
+  color: #020826;
   margin-bottom: 0.1em;
 }
 
@@ -66,6 +66,10 @@ header {
 
 .icon {
   width: 4em;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .link-ext {
@@ -90,8 +94,8 @@ header {
   margin: auto;
   width: 1.5em;
   height: 1.5em;
-  border-bottom: 3px solid #eff0f3;
-  border-right: 3px solid #eff0f3;
+  border-bottom: 3px solid #020826;
+  border-right: 3px solid #020826;
   transform: rotate(180deg);
   animation: animate 1s infinite;
 }
@@ -134,11 +138,7 @@ header {
 }
 
 
-.section4 {
-  height: 80vh;
-  display: flex;
-  flex-direction: row;
-}
+
 
 
 footer {

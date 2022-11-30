@@ -57,11 +57,17 @@
   transform: scale(1);
   z-index: 5;
   display: flex;
+  flex-direction: column;
+  align-items: center;
  -webkit-transition: all .8s;
  -moz-transition: all .8s;
  -o-transition: all .8s;
  -ms-transition: all .8s;
  transition: all .8s;
+}
+
+.style p {
+  font-size: 25px;
 }
 
 
