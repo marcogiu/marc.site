@@ -6,12 +6,16 @@
 }
 
 .hamburger {
-  font-size: 3em;
+  font-size: 4em;
   padding: 10px 15px;
-  color: #2a2a2a;
+  color: #020826;;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
+}
+
+.hamburger:hover {
+  color: #f9f4ef;
 }
 
 .link-menu {
@@ -20,6 +24,16 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+
+.link2 {
+  text-decoration: none;
+  color: #020826;
+  font-size: 32px;
+}
+
+.link2:hover {
+  color: #f25042;
 }
 
 .header-overlay {
@@ -32,6 +46,7 @@
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 6;
 }
 
 .header-overlay:target {
@@ -41,7 +56,7 @@
 
 .popup0 {
   padding: 100px;
-  background: #eff0f3;
+  background: #eaddcf;
   border-radius: 5px;
   position: relative;
   transition: all 3s ease-in-out;
@@ -55,8 +70,13 @@
   font-size: 60px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #020826;
 }
+
+.popup0 .close-menu:hover {
+  color: #f25042;
+}
+
 .hamburger {
   display: none;
 }

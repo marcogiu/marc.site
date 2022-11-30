@@ -16,14 +16,16 @@
 .button {
   font-size: 2em;
   padding: 10px 15px;
-  color: #fffffe;
+  color: #020826;
   border-radius: 20px/50px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+
 .button:hover {
-  background: #f9bc60;
+  background: #716040;
+  color: #fffffe;
 }
 
 .overlay {
@@ -47,7 +49,7 @@
   margin: auto;
   padding: 8em;
   width: 90em;
-  background-image: url("../img/about\ me\ \(1\).png");
+  background-image: url("../img/about-me.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -61,8 +63,7 @@
 .content {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: max-content;
+  justify-content: space-around;
 }
 
 .popup .close {
@@ -78,28 +79,50 @@
 .popup .close:hover {
   color: #2a2a2a;
 }
-.popup .content {
-  max-height: 100%;
-  overflow: auto;
-}
 
 .about-me h1 {
   font-size: 30px;
 }
 
-.description {
+.left-content {
+  position: relative;
+  left: -6em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.description p {
-  margin: auto;
+.left-content p {
   font-size: 3em;
   width: 15em;
   text-align: center;
   line-height: 1.4em;
+}
+
+.right-content {
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-content {
+  position: relative;
+  top: 20px;
+  left: 10em;
+  width: 5em;
+  font-size: 2em;
+  padding: 10px 15px;
+  color: #020826;
+  background-color: #fffffe;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button-content:hover {
+  background-color: #716040;
 }
 
 /*                   PHONES       */
@@ -120,7 +143,7 @@
     top: 10%;
   }
 
-  .description p {
+  .left-content p {
     font-size: 1.5em;
     width: 8em;
     text-align: center;
@@ -147,8 +170,3 @@
 }
 
 
-/*                 LARGE             */
-@media screen and (max-width: 1200px) {
-
-
-}
