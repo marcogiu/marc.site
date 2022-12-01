@@ -189,15 +189,22 @@
       <h1 class="section-title">CONTACT</h1>
 
       <div class="contact-form">
-        <form class="contact" action="mailto:alice.lazzeri@hotmail.it" method="post" enctype="multipart/form-data" name="EmailForm">
-          <input type="text" name="contact- name" placeholder="Your first and last name" required>
-          <input type="email" name="contact-email" placeholder="Your email" required>
-          <input type="text" name="location" placeholder="Your location" required>
+        <h1>Let's talk</h1>
+        <form class="contact" action="mailto:giuliani.marco1998@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+          <div class="left-contact">
+          <input type="text" name="contact- name" placeholder="First and Last Name" required>
+          <input type="email" name="contact-email" placeholder="Email" required>
+          <input type="text" name="location" placeholder="Location" required>
+        </div>
+        <div class="right-contact">
           <textarea name="contact-message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+        
           <div class="contact-buttons">
-            <button class="send" type="submit" class="btn btn-primary">Submit</button>
-            <button class="send" type="reset" class="btn btn-primary">Reset</button>
+            <button class="send" type="submit">Submit</button>
+            <button class="send" type="reset">Reset</button>
           </div>
+        </div>
+        
         </form>
 
       </div>
