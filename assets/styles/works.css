@@ -104,7 +104,7 @@
     
   }
   
-  .img1 , .img2 , .img3 {
+  .img1 , .img2 {
     width: 30em;
     height: 25em;
     margin-left: 150px;
@@ -115,6 +115,18 @@
 
 /*                LAPTOPS          */
 @media screen and (max-width: 992px){
+  
+  .card {
+    width: 35em;
+    height: 23em;
+    
+  }
+  
+  .img1 , .img2 {
+    width: 35em;
+    height: 30em;
+  }
+
 
 
 }

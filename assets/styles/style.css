@@ -7,6 +7,7 @@
 body {
   font-size: 10px;
   background-color: #f9f4ef;
+  min-height: 100vh;
 }
 
 header {
@@ -188,7 +189,6 @@ footer p {
 
   .logo {
     width: 7em;
-
   }
 
   .section1 {
@@ -203,7 +203,7 @@ footer p {
     height: 92vh;
   }
   .section4 {
-    height: 82vh;
+    height: 100vh;
   }
 
   footer {
@@ -221,8 +221,8 @@ footer p {
   .arrow span {
     width: 0.5em;
     height: 0.5em;
-    border-bottom: 2px solid #eff0f3;
-    border-right: 2px solid #eff0f3;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
   }
   
 }

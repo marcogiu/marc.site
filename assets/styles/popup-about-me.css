@@ -134,13 +134,13 @@
 @media screen and (max-width: 768px) {
   .popup {
     padding: 10px;
-    width: 70%;
-    height: 60vh;
-    background-image: url("../img/ABOUT\ ME\ \(2\).png");
+    width: 350px;
+    height: 80vh;
+    background-image: url("../img/about-me-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    top: 10%;
+    top: 8%;
   }
 
   .left-content p {
@@ -148,14 +148,28 @@
     width: 8em;
     text-align: center;
     line-height: 1.2em;
+    position: relative;
+    top: 20%;
+    left: 60%;
   }
 
   .profile-picture {
     width: 10em;
-    height: fit-content;
-    object-fit: scale-down;
+    height:30em;
     border-radius: 20px;
+    object-fit: cover;
+    object-position: left;
     margin-left: 6em;
+    position: relative;
+    top: 20%;
+  }
+
+  .button-content {
+    position: relative;
+    top: 40%;
+    left: 15%;
+    right: 100px;
+    width: 5em;
   }
 
 
@@ -165,129 +179,7 @@
 
 /*                LAPTOPS          */
 @media screen and (max-width: 992px){
-  .profile-picture {
-    margin: auto;
-    width: 30em;
-    object-fit: cover;
-    border-radius: 20px;
-    margin-right: 20px;
-  }
-  
-  .box {
-    margin: 0 auto;
-    padding: 35px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-  
-  .button {
-    font-size: 2em;
-    padding: 10px 15px;
-    color: #020826;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
-  
-  .button:hover {
-    background: #716040;
-    color: #fffffe;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 0.5s;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    margin: auto;
-    padding: 8em;
-    width: 90em;
-    background-image: url("../img/about-me.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    border-radius: 5px;
-    position: relative;
-    top: 10%;
-    z-index: 1;
-    transition: all 5s ease-in-out;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  .popup .close {
-    position: absolute;
-    top: 0px;
-    right: 25px;
-    transition: all 200ms;
-    font-size: 60px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .popup .close:hover {
-    color: #2a2a2a;
-  }
-  
-  .about-me h1 {
-    font-size: 30px;
-  }
-  
-  .left-content {
-    position: relative;
-    left: -6em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-content p {
-    font-size: 3em;
-    width: 15em;
-    text-align: center;
-    line-height: 1.4em;
-  }
-  
-  .right-content {
-    margin-left: 5em;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .button-content {
-    position: relative;
-    top: 20px;
-    left: 10em;
-    width: 5em;
-    font-size: 2em;
-    padding: 10px 15px;
-    color: #020826;
-    background-color: #fffffe;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
-  
+
 
 
 

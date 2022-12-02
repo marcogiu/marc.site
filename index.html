@@ -185,29 +185,23 @@
 
 
     <section id="contact" class="section4">
-      
       <h1 class="section-title">CONTACT</h1>
-
       <div class="contact-form">
-        <h1>Let's talk</h1>
-        <form class="contact" action="mailto:giuliani.marco1998@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
-          <div class="left-contact">
-          <input type="text" name="contact- name" placeholder="First and Last Name" required>
-          <input type="email" name="contact-email" placeholder="Email" required>
-          <input type="text" name="location" placeholder="Location" required>
-        </div>
-        <div class="right-contact">
-          <textarea name="contact-message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
-        
-          <div class="contact-buttons">
-            <button class="send" type="submit">Submit</button>
-            <button class="send" type="reset">Reset</button>
-          </div>
-        </div>
-        
-        </form>
-
-      </div>
+        <form id="form" action="mailto:giuliani.marco1998@gmail.com" method="POST"> 
+         <fieldset>
+           <div class="formstyle0">
+             <div class="formstyle1">
+               <input type="text" id="insname" name="ins-name" placeholder="Your name">  
+               <input type="email" id="insmail" name="email" placeholder="Your email">
+             </div>
+             <div class="formstyle2">
+               <textarea class='txtarea' id="instext" name="message" placeholder="Write here and submit the form, I'll answer you as soon as possible."></textarea>
+               <input class='submit-btn' id="submit" type="submit" value="Send message"> 
+             </div>
+           </div>  
+         </fieldset>
+       </form>
+     </div>
 
     </section>
 
