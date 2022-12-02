@@ -90,8 +90,8 @@
 .load {
   display: inline-block;
   background-color: #716040;
-  height: 4em;
-  width: 4em;
+  height: 5em;
+  width: 5em;
   border-radius: 50%;
   transform: scale(0);
   animation: load 1.5s linear infinite;
@@ -100,8 +100,10 @@
 
 .load:nth-child(2) {
   background-color: #0d0d0d;
-  animation-delay: 0.8s;
+  animation-delay: 0.4s;
 }
+
+
 
 @keyframes spinner {
   to {
