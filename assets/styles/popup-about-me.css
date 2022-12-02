@@ -185,7 +185,8 @@
   .popup {
     margin: auto;
     padding: 8em;
-    width: 50em;
+    width: 55em;
+    height: 40em;
     background-image: url("../img/about-me-mid.jpg");
     background-repeat: no-repeat;
     background-size: cover;
