@@ -52,7 +52,7 @@
   background-image: url("../img/about-me.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   border-radius: 5px;
   position: relative;
   top: 10%;
@@ -176,9 +176,50 @@
 }
 
 
+@media screen and (max-width: 1080px) and (min-width: 768px) {
+
+  .profile-picture {
+    width: 20em;
+  }  
+
+  .popup {
+    margin: auto;
+    padding: 8em;
+    width: 50em;
+    background-image: url("../img/about-me-mid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .about-me h1 {
+    font-size: 30px;
+  }
+  
+  .left-content {
+    position: relative;
+  }
+  
+  .left-content p {
+    margin-left: 10%;
+    font-size: 2em;
+    width: 12em;
+  }
+    
+  .button-content {
+    position: relative;
+    left: 30%;
+  }
+  
+ 
+
+
+}
+
 
 /*                LAPTOPS          */
-@media screen and (max-width: 992px){
+@media screen and (m-width: 992px){
 
 
 
