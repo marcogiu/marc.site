@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/styles/works.css">
     <link rel="stylesheet" href="./assets/styles/skills.css">
     <link rel="stylesheet" href="./assets/styles/contact.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -190,22 +191,24 @@
 
     <section id="contact" class="section4">
       <h1 class="section-title">CONTACT</h1>
+      <div class="container-contact">
+        <div class="left-contact">
+          <div>
+          <img src="./assets/img/send-message-icon.png" alt="send-icon">
+        </div>
+        </div>
       <div class="contact-form">
-        <form id="form" action="mailto:giuliani.marco1998@gmail.com" method="POST"> 
-         <fieldset>
-           <div class="formstyle0">
-             <div class="formstyle1">
-               <input type="text" id="insname" name="ins-name" placeholder="Your name">  
-               <input type="email" id="insmail" name="email" placeholder="Your email">
-             </div>
-             <div class="formstyle2">
-               <textarea class='txtarea' id="instext" name="message" placeholder="Write here and submit the form, I'll answer you as soon as possible."></textarea>
-               <input class='submit-btn' id="submit" type="submit" value="Send message"> 
-             </div>
-           </div>  
-         </fieldset>
-       </form>
-     </div>
+        <h1>Let's get in touch...</h1>
+        <form class="contact" action="mailto:giuliani.marco1998@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+          <input type="text" name="contact- name" placeholder="Name" required>
+          <input type="email" name="contact-email" placeholder="Email" required>
+          <textarea name="contact-message" placeholder="Message" required></textarea>
+          <div class="contact-buttons">
+            <button class="send" type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     </section>
 
@@ -222,6 +225,7 @@
       </div>
 
       <a href="#"><img class="footer-img" src="./assets/img/logo.png" alt=""></a>
+      <div class="sub-img">top</div>
       
 
       <div>

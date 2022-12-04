@@ -7,85 +7,72 @@
   align-items: center;
 }
 
-.contact-form {
-  border: 2px solid red;
-  height: 80vh;
-  width: 80%;
-}
-
-.formstyle0 {
+.container-contact {
+  height: 75vh;
+  width: 70%;
+  background-color: #716040;
+  border-radius: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  background-color: #14213d;
-  border-radius: 15px;
-  padding: 35px 10px;
-  box-shadow: rgba(9, 9, 9, 0.4) 0px 3px 4px 3px;
-}
-
-.formstyle1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-}
-.formstyle1 #insname, .formstyle1 #insmail {
-  color: #ededed;
-  width: 18vw;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #444659;
-}
-
-input {
-  font-size: 16px;
-}
-
-textarea:focus, input:focus {
-  outline: none;
-}
-
-.formstyle2 {
-  width: 88.5%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.txtarea {
-  color: #ededed;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 25px;
-  width: 100%;
-  height: 20vh;
-  resize: none;
-  border: none;
-  border-radius: 8px;
-  background-color: #444659;
-  padding: 4px 8px;
+.left-contact {
+  height: 100%;
+  width: 50%;
+  border-right: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.submitbtn {
-  color: #14213d;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 18px;
-  margin-top: 28px;
-  width: max-content;
-  border: none;
-  border-radius: 20px;
-  background-color: #ededed;
+.left-contact img {
+  width: 70%;
+}
+
+.contact-form {
+  height: 100%;
+  width: 50%;
+}
+.contact-form h1 {
+  width: 50%;
+  font-size: 32px;
+  margin-left: 25%;
+  margin-bottom: 10%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  background-color: #eff0f3;
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
   padding: 10px;
+  border-radius: 7px;
 }
-.submitbtn:hover {
-  background-color: #d1d1d1;
-  transform: scale(1.05);
+
+.contact textarea {
+  height: 170px;
+  resize: none;
 }
+
+@media screen and (max-width: 768px) {
+
+  .left-contact {
+    display: none;
+  }
+}
+
+
+
 
 
 
