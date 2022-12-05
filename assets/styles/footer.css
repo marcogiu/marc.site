@@ -8,7 +8,6 @@ footer {
 }
 
 .footer-img {
-  margin-left: 20px;
   width: 50px;
 }
 
@@ -18,6 +17,7 @@ footer {
 
 
 .link-footer {
+  margin-left: 2em;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -33,6 +33,10 @@ footer p {
 }
 
 .footer-img:hover .sub-img {
-  display: block;
+  display: inline-block;
+}
+
+.right-footer {
+  margin-right: 2em;
 }
 
