@@ -145,29 +145,29 @@
 
   .left-content p {
     font-size: 1.5em;
-    width: 8em;
+    width: 18em;
     text-align: center;
     line-height: 1.2em;
     position: relative;
-    top: 20%;
-    left: 60%;
+    top: 80%;
+    left: 80%;
   }
 
   .profile-picture {
-    width: 10em;
-    height:30em;
+    width: 20em;
     border-radius: 20px;
     object-fit: cover;
     object-position: left;
     margin-left: 6em;
     position: relative;
-    top: 20%;
+    top: 10%;
+    right: 65%;
   }
 
   .button-content {
     position: relative;
-    top: 40%;
-    left: 15%;
+    top: 72%;
+    left: 5%;
     right: 100px;
     width: 5em;
   }
