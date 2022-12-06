@@ -54,12 +54,8 @@
   flex-direction: column;
 }
 
-.card-content-front {
-  background: #eff0f3;
-}
-
 .card-content-back {
-  background: #eff0f3;
+  background: #716040;
   transform: rotateY(180deg);
   border: 2px solid #0d0d0d;
 }
@@ -71,12 +67,16 @@
 }
 
 .card-content-back h1 {
-  font-size: 2.5rem;
+  font-size: 5em;
   color: #2a2a2a;
 }
 
 .card-content-back p {
-  font-size: 1.5em;
+  font-size: 2.5em;
+  text-align: center;
+  width: 8em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   color: #2a2a2a;
 }
 
@@ -89,7 +89,7 @@
 
 .load {
   display: inline-block;
-  background-color: #716040;
+  background-color: #f9f4ef;
   height: 5em;
   width: 5em;
   border-radius: 50%;
@@ -103,8 +103,6 @@
   animation-delay: 0.4s;
 }
 
-
-
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -116,12 +114,7 @@
     transform: scale(1);
   }
 }
-/*                   PHONES       */
-@media screen and (max-width: 600px) {
 
-}
-
-/*             TABLETS            */
 @media screen and (max-width: 768px) {
 
   .works {
@@ -146,9 +139,6 @@
   }
 }
 
-
-
-/*                LAPTOPS          */
 @media screen and (max-width: 992px){
   
   .card {
@@ -162,14 +152,22 @@
     height: 30em;
   }
 
+  .card-content-back h1 {
+    font-size: 3em;
+  }
+  
+  .card-content-back p {
+    font-size: 1.5em;
+  }
 
-
+  .load {
+    height: 2em;
+    width: 2em;
+    transform: scale(0);
+    animation: load 1.5s linear infinite;
+    margin: -5px;
+  }
 }
 
 
-/*                 LARGE             */
-@media screen and (max-width: 1200px) {
-
-
-}
 

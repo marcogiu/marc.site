@@ -30,22 +30,9 @@
   width: 10em;
 }
 
-.skill-description {
-  border: 2px solid black;
-  width: 10em;
-  visibility: hidden;
-  opacity: 0;
-  position: relative;
-}
-
-.tab:target .skill-description {
-  visibility: visible;
-  opacity: 1;
-}
-
 .skill-menu {
   position: relative;
-  top: -100px;
+  top: -7em;
 }
 
 .toggle {
@@ -59,21 +46,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- -webkit-transition: all .8s;
- -moz-transition: all .8s;
- -o-transition: all .8s;
- -ms-transition: all .8s;
- transition: all .8s;
+ transition: all 0.8s;
 }
 
 .style p {
-  font-size: 25px;
+  font-size: 2.5em;
 }
 
-
-
 .toggle:checked + .style {
-  transform: translateY(-50px) scale(0.4);
+  transform: translateY(-5em) scale(0.4);
 }
 
 .skill-menu input[type=checkbox] + label:before {
@@ -84,22 +65,22 @@
 .toggle + .style:before, .toggle + .style:after {
   content: "";
   position: absolute;
-  border-radius: 5px;
+  border-radius: 0.5em;
   transition: all 0.3s;
 }
 
 .toggle + .style:before {
-  width: 30px;
-  height: 0px;
-  left: 10px;
-  top: 25px;
+  width: 3em;
+  height: 0;
+  left: 1em;
+  top: 2.5em;
 }
 
 .toggle + .style:after {
-  width: 0px;
-  height: 30px;
-  left: 25px;
-  top: 10px;
+  width: 0;
+  height: 3em;
+  left: 2.5em;
+  top: 1em;
 }
 
 .toggle:checked + .style:before, .toggle:checked + .style:after {
@@ -127,38 +108,39 @@
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-  top: -175px;
-  left: -300px;
+  top: -17.5em;
+  left: -30em;
   transition-delay: 0s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-  top: -175px;
-  left: 300px;
+  top: -17.5em;
+  left: 30em;
   transition-delay: 0.125s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-  left: -300px;
+  left: -30em;
   transition-delay: 0.25s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-  left: 300px;
+  left: 30em;
   transition-delay: 0.375s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
-  top: 175px;
-  left: -300px;
+  top: 17.5em;
+  left: -30em;
   transition-delay: 0.5s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-  top: 175px;
-  left: 300px;
+  top: 17.5em;
+  left: 30em;
   transition-delay: 0.625s;
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -166,34 +148,33 @@
   .icon-skill {
     width: 7em;
   }  
-
-
+  
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
     top: -175px;
-    left: -140px;
+    left: -120px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
     top: -175px;
-    left: 140px;
+    left: 120px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    left: -140px;
+    left: -120px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 140px;
+    left: 120px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
     top: 175px;
-    left: -140px;
+    left: -120px;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
     top: 175px;
-    left: 140px;
+    left: 120px;
   }
 
 
