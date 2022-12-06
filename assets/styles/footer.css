@@ -9,10 +9,7 @@ footer {
 
 .footer-img {
   width: 50px;
-}
-
-.footer-img-hover {
-  display: none;
+  margin-right: 2em;
 }
 
 
@@ -30,6 +27,7 @@ footer p {
 
 .sub-img {
   display: none;
+  position: relative;
 }
 
 .footer-img:hover .sub-img {
@@ -38,5 +36,12 @@ footer p {
 
 .right-footer {
   margin-right: 2em;
+}
+
+
+.footer-img:hover .sub-img{
+  display: block;
+  font-size: 2em;
+  color: black;
 }
 

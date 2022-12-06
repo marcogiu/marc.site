@@ -3,7 +3,6 @@
   width: 30em;
   object-fit: cover;
   border-radius: 20px;
-  margin-right: 20px;
 }
 
 .box {
@@ -86,7 +85,8 @@
 
 .left-content {
   position: relative;
-  left: -6em;
+  top: -5em;
+  left: -3em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -94,22 +94,33 @@
 }
 
 .left-content p {
-  font-size: 3em;
-  width: 15em;
-  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2.3em;
+  width: 20em;
+  text-align: start;
   line-height: 1.4em;
 }
 
+.link-description {
+  text-decoration: underline;
+  color: #716040;
+}
+
+.link-description:hover {
+  color: #f25042;
+}
+
 .right-content {
-  margin-left: 5em;
+  margin-left: 10em;
   display: flex;
   flex-direction: column;
 }
 
 .button-content {
   position: relative;
-  top: 20px;
-  left: 10em;
+  top: 0.5em;
+  left: 8.5em;
   width: 5em;
   font-size: 2em;
   padding: 10px 15px;
@@ -125,12 +136,7 @@
   background-color: #716040;
 }
 
-/*                   PHONES       */
-@media screen and (max-width: 600px) {
 
-}
-
-/*             TABLETS            */
 @media screen and (max-width: 768px) {
   .popup {
     padding: 10px;
@@ -140,17 +146,25 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    top: 8%;
+    top: 5em;
   }
 
   .left-content p {
     font-size: 1.5em;
-    width: 18em;
+    width: 22em;
     text-align: center;
     line-height: 1.2em;
     position: relative;
-    top: 80%;
-    left: 80%;
+    top: 20em;
+    left: 12em;
+  }
+
+  .link-description {
+    color: #f25042;
+  }
+  
+  .link-description:hover {
+    color: #fffffe;
   }
 
   .profile-picture {
@@ -158,18 +172,18 @@
     border-radius: 20px;
     object-fit: cover;
     object-position: left;
-    margin-left: 6em;
     position: relative;
-    top: 10%;
-    right: 65%;
+    top: 4em;
+    right: 21em;
   }
 
   .button-content {
     position: relative;
-    top: 72%;
-    left: 5%;
-    right: 100px;
+    top: 16em;
+    left: -4em;
     width: 5em;
+    font-size: 1.5em;
+    padding: 8px 13px;
   }
 }
 
@@ -201,19 +215,16 @@
   }
   
   .left-content p {
-    margin-left: 10%;
-    font-size: 2em;
-    width: 12em;
+    position: relative;
+    top: 2em;
+    font-size: 1.6em;
+    width: 18em;
   }
     
   .button-content {
-    position: relative;
     left: 30%;
   }
   
- 
-
-
 }
 
 

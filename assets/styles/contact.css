@@ -70,6 +70,31 @@
 
 }
 
+.button-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 7em;
+}
+
+.button-contact .button {
+  width: 5em;
+  font-size: 2em;
+  padding: 8px 14px;
+  color: #020826;
+  background-color: #fffffe;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;;
+}
+
+.button-contact .button:hover {
+  color: #eff0f3;
+  background-color: #000000;
+}
+
 
 @media screen and (max-width: 768px) {
 
