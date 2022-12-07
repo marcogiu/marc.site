@@ -35,6 +35,9 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+  footer {
+    height: 10vh;
+  }
   
   .footer-img {
     width: 3.5em;
