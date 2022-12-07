@@ -17,12 +17,11 @@ header {
   align-items: center;
   justify-content: space-evenly;
   height: 15vh;
-  width: 100%;
 }
 
 .logo {
   width: 10em;
-  margin: 0.5em 0;
+  margin: 5em 0;
 }
 
 .header-link {
