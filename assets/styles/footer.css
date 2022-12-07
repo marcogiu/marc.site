@@ -30,18 +30,22 @@ footer p {
   position: relative;
 }
 
-.footer-img:hover .sub-img {
-  display: inline-block;
-}
-
 .right-footer {
   margin-right: 2em;
 }
 
+@media screen and (max-width: 600px) {
+  
+  .footer-img {
+    width: 3.5em;
+  }
 
-.footer-img:hover .sub-img{
-  display: block;
-  font-size: 2em;
-  color: black;
+  .icon {
+    width: 2em;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
 }
 
