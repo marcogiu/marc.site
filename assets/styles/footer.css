@@ -5,6 +5,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   height: 20vh;
+  width: 100%;
 }
 
 .footer-img {
@@ -49,6 +50,10 @@ footer p {
   
   footer p {
     font-size: 1em;
+  }
+
+  .link-footer {
+    gap: 1em;
   }
 }
 
