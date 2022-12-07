@@ -7,7 +7,7 @@
 body {
   font-size: 10px;
   background-color: #f9f4ef;
-  min-height: 100svh;
+  height: 100svh;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
   align-items: center;
   justify-content: space-evenly;
   height: 15svh;
-  max-width: 100%;
+  width: 100dvl;
 }
 
 .logo {
