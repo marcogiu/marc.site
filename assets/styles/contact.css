@@ -1,5 +1,5 @@
 .section4 {
-  height: 100dvh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
 }
 
 .container-contact {
-  height: 75dvh;
+  height: 75vh;
   width: 70%;
   background-color: #716040;
   border-radius: 50px;
