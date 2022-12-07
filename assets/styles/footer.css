@@ -4,7 +4,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 20vh;
+  height: 20svh;
 }
 
 .footer-img {
@@ -36,7 +36,7 @@ footer p {
 
 @media screen and (max-width: 600px) {
   footer {
-    height: 10vh;
+    height: 10svh;
   }
   
   .footer-img {

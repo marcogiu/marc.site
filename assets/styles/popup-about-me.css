@@ -141,7 +141,7 @@
   .popup {
     padding: 10px;
     width: 350px;
-    height: 80vh;
+    height: 80svh;
     background-image: url("../img/about-me-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
