@@ -21,7 +21,7 @@ header {
 
 .logo {
   width: 10em;
-  margin: 5em 0;
+  margin-left: 10em;
 }
 
 .header-link {
@@ -158,7 +158,7 @@ header {
   }
 
   .logo {
-    width: 7em;
+    width: 5em;
   }
 
   .section1 {
@@ -199,10 +199,12 @@ header {
 
 /*             TABLETS            */
 @media screen and (max-width: 768px) {
+
   .header-link {
     visibility: hidden;
   }
-  .img1 , .img2 , .img3 {
+
+  .img1 , .img2 {
     width: 14em;
     height: 20em;
     object-fit: contain;
@@ -212,23 +214,10 @@ header {
   .right-sidebar {
     display: none;
   }
-
 }
 
 
 
-/*                LAPTOPS          */
-@media screen and (max-width: 992px){
-
-
-}
-
-
-/*                 LARGE             */
-@media screen and (max-width: 1200px) {
-
-
-}
 
 
 

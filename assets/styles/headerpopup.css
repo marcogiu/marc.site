@@ -1,6 +1,6 @@
 .hamburger {
   font-size: 4em;
-  padding: 1em 1.5em;
+  margin-right: 2em;
   color: #020826;;
   text-decoration: none;
   cursor: pointer;
@@ -30,6 +30,7 @@
 }
 
 .header-overlay {
+  width: 100%;
   position: fixed;
   top: 0;
   bottom: 0;
