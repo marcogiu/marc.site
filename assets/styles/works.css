@@ -16,7 +16,7 @@
   
 }
 
-.img1 , .img2 , .img3 {
+.img1 , .img2  {
   width: 45em;
   height: 40em;
   object-fit: cover;
@@ -136,6 +136,29 @@
     margin-left: 150px;
   }
 }
+
+@media (max-width: 768px) and (max-height: 600px) {
+  .works {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .card {
+    width: 30em;
+    height: 25em;
+    
+  }
+  
+  .img1 , .img2 {
+    width: 30em;
+    height: 25em;
+  }
+
+}
+
 
 @media screen and (max-width: 992px){
   

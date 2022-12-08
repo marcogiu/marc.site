@@ -75,10 +75,9 @@
   display: none;
 }
 
-@media screen and (max-width: 375px) {
+@media (orientation: portrait) {
   .hamburger {
-    display: inline-block;
-    margin-right: 5em;
+    margin-right: 3em;
   }
 }
 
