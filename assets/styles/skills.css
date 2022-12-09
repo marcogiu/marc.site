@@ -160,26 +160,28 @@ and (max-width: 480px) {
   }
 
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    top: -10em;
-    left: -10em;
+    top: -14em;
+    left: -12.5em;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    top: -10em;
+    top: -14em;
     left: 5em;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    left: -10em;
+    left: -12.5em;
+    top: -2em;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
     left: 5em;
+    top: -2em;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
     top: 10em;
-    left: -8em;
+    left: -12.5em;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {

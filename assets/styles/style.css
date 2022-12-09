@@ -19,29 +19,7 @@ header {
   height: 15vh;
 }
 
-.logo {
-  width: 10em;
-  margin-left: 10em;
-}
-
-.header-link {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
-}
-
-.link {
-  text-decoration: none;
-  color: #020826;
-  font-size: 32px;
-}
-
-.link:hover {
-  color: #fffffe;
-}
-
- .section1 {
+.section1 {
   margin-bottom: 0;
   display: flex;
   flex-direction: row;
@@ -51,35 +29,6 @@ header {
   width: 100%;
 }
 
-
-.section1 h3 {
-  font-size: 4em;
-  color: #020826;
-  margin-bottom: 0.1em;
-}
-
-.right-sidebar {
-  margin-left: -7em;
-  margin-right: 2em;
-  height: 75vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
-}
-
-.icon {
-  width: 4em;
-}
-
-.icon:hover {
-  transform: scale(1.3);
-}
-
-.link-ext {
-  list-style-type: none;
-  line-height: 30px;
-}
 
 .divide {
   position: relative;
@@ -144,42 +93,13 @@ header {
 @media screen 
 and (min-width: 320px) 
 and (max-width: 480px) {
-  .header-link {
-    display: none;
-  }
 
   header {
     height: 10vh;
-    width: 100lh;
-  }
-
-  .logo {
-    width: 5em;
-    margin-left: 25em;
   }
 
   .section1 {
     height: 82vh;
-    width: 100lh;
-  }
-
-  .section2 {
-    height: 92vh;
-    width: 100lh;
-  }
-
-  .section3 {
-    height: 92vh;
-    width: 100lh;
-  }
-  .section4 {
-    height: 100vh;
-    width: 100lh;
-  }
-
-  footer {
-    height: 18vh;
-    width: 100lh;
   }
 
   .divide {
@@ -196,6 +116,23 @@ and (max-width: 480px) {
     border-bottom: 2px solid #020826;
     border-right: 2px solid #020826;
   }
+
+  .section2 {
+    height: 92vh;
+  }
+
+  .section3 {
+    height: 92vh;
+  }
+  .section4 {
+    height: 100vh;
+  }
+
+  footer {
+    height: 18vh;
+  }
+
+
 }
 
 
