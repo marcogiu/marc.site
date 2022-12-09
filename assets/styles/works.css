@@ -113,8 +113,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
   .works {
     display: flex;
     flex-direction: column;
@@ -135,7 +136,10 @@
     height: 25em;
     margin-left: 150px;
   }
+
 }
+
+
 
 @media (max-width: 768px) and (max-height: 600px) {
   .works {
@@ -147,48 +151,18 @@
   }
   
   .card {
-    width: 30em;
-    height: 25em;
+    width: 20em;
+    height: 15em;
     
   }
   
   .img1 , .img2 {
-    width: 30em;
-    height: 25em;
+    width: 15em;
   }
 
 }
 
 
-@media screen and (max-width: 992px){
-  
-  .card {
-    width: 35em;
-    height: 23em;
-    
-  }
-  
-  .img1 , .img2 {
-    width: 35em;
-    height: 30em;
-  }
-
-  .card-content-back h1 {
-    font-size: 3em;
-  }
-  
-  .card-content-back p {
-    font-size: 1.5em;
-  }
-
-  .load {
-    height: 2em;
-    width: 2em;
-    transform: scale(0);
-    animation: load 1.5s linear infinite;
-    margin: -5px;
-  }
-}
 
 
 

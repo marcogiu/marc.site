@@ -1,6 +1,6 @@
 .profile-picture {
   margin: auto;
-  width: 30em;
+  max-width: 35em;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -136,11 +136,15 @@
   background-color: #716040;
 }
 
+/*    Mobile   */
 
-@media screen and (max-width: 768px) {
+@media screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+
   .popup {
     padding: 10px;
-    width: 350px;
+    max-width: 78%;
     height: 80vh;
     background-image: url("../img/about-me-small.jpg");
     background-repeat: no-repeat;
@@ -150,13 +154,13 @@
   }
 
   .left-content p {
-    font-size: 1.5em;
-    width: 22em;
+    font-size: 1.2em;
+    max-width: 28em;
     text-align: center;
     line-height: 1.2em;
     position: relative;
-    top: 20em;
-    left: 12em;
+    top: 25em;
+    left: 15em;
   }
 
   .link-description {
@@ -174,16 +178,16 @@
     object-position: left;
     position: relative;
     top: 4em;
-    right: 21em;
+    right: 17em;
   }
 
   .button-content {
     position: relative;
     top: 16em;
-    left: -4em;
+    left: -8.5em;
     width: 5em;
-    font-size: 1.5em;
-    padding: 8px 13px;
+    font-size: 1.3em;
+    padding: 7px 12px;
   }
 }
 
