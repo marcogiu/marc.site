@@ -249,7 +249,7 @@ header {
   font-size: 30px;
 }
 
-.left-content {
+.description {
   position: relative;
   top: -5em;
   left: -3em;
@@ -259,7 +259,7 @@ header {
   align-items: center;
 }
 
-.left-content p {
+.description p {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2.3em;
@@ -697,7 +697,7 @@ header {
   background-color: #eff0f3;
   font-family: 'Raleway', sans-serif;
   font-size: 2em;
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 10px;
   border-radius: 7px;
@@ -723,10 +723,10 @@ header {
   padding: 8px 14px;
   color: #020826;
   background-color: #fffffe;
-  border-radius: 20px;
+  border-radius: 2em;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease-out;;
+  transition: all 0.3s ease-out;
 }
 
 .button-contact .button:hover {
@@ -775,7 +775,7 @@ footer p {
 
 @media screen 
 and (min-width: 320px) 
-and (max-width: 480px) {
+and (max-width: 500px) {
 
   /*    HEADER     */
 
@@ -806,7 +806,7 @@ and (max-width: 480px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5em;
+    gap: 3em;
   }
   
   .link2 {
@@ -839,7 +839,7 @@ and (max-width: 480px) {
   }
   
   .popup0 {
-    padding: 0;
+    padding: 5em;
     background: #eaddcf;
     border-radius: 0.5em;
     position: relative;
@@ -874,8 +874,8 @@ and (max-width: 480px) {
   /*    POPUP-ABOUT-ME   */
 
   .popup {
-    padding: 10px;
-    max-width: 78%;
+    padding: 1em;
+    max-width: 85vw;
     height: 80vh;
     background-image: url("../img/about-me-small.jpg");
     background-repeat: no-repeat;
@@ -884,14 +884,22 @@ and (max-width: 480px) {
     top: 5em;
   }
 
-  .left-content p {
-    font-size: 1.2em;
-    max-width: 28em;
+  .content {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .description p {
+    border: 2px solid red;
+    font-size: 1.8em;
+    margin-left: 15%;
+    margin-top: 5%;
     text-align: center;
     line-height: 1.2em;
-    position: relative;
-    top: 25em;
-    left: 15em;
   }
 
   .link-description {
@@ -903,19 +911,17 @@ and (max-width: 480px) {
   }
 
   .profile-picture {
-    width: 20em;
-    border-radius: 20px;
+    border: 2px solid red;
+    max-width: 70%;
+    border-radius: 2em;
     object-fit: cover;
     object-position: left;
-    position: relative;
-    top: 4em;
-    right: 17em;
   }
 
   .button-content {
-    position: relative;
-    top: 16em;
-    left: -8.5em;
+    border: 2px solid red;
+    
+    margin-top: 5%;
     width: 5em;
     font-size: 1.3em;
     padding: 7px 12px;
@@ -954,9 +960,26 @@ and (max-width: 480px) {
   }
   
   .card {
-    width: 20em;
+    max-width: 20em;
     height: 15em;
-    
+  }
+
+  .card-content-back h1 {
+    font-size: 2.5em;
+  }
+
+  .card-content-back p {
+    font-size: 1.25em;
+  }
+
+  .loader {
+    height: 2.5em;
+  }
+
+  .load {
+    height: 2.5em;
+    width: 2.5em;
+    margin: -5px;
   }
   
   .img1 , .img2 {
@@ -1020,14 +1043,96 @@ and (max-width: 480px) {
     height: 100vh;
   }
 
-  /*   FOOTER     */
-
-  footer {
-    height: 18vh;
+  .left-contact {
+    display: none;
   }
 
+  .contact-form {
+    width: 90%;
+  }
 
+  .first-line {
+    margin: 2em auto;
+    max-width: 25em;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5em;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .contact textarea {
+    max-height: 13em;
+  }
+  
+  .contact input,
+  .contact textarea {
+    font-size: 0.8em;
+    max-width: 70%;
+  }
+   
+  .button-contact {
+    margin-top: 0;
+    gap: 2em;
+  }
+  
+  .button-contact .button {
+    width: 4em;
+    font-size: 1.2em;
+    padding: 3px 6px;
+    border-radius: 20px;
+  }
+
+  /*   FOOTER     */
+  footer {
+    background-color: #716040;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+  }
+
+  .link-footer {
+    gap: 1em;
+  }
+
+  footer .icon {
+    width: 2em;
+  }
+  
+  .footer-img {
+    width: 2em;
+    margin-right: 0;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
+  .sub-img {
+    display: none;
+    position: relative;
+  }
+  
+  .right-footer {
+    margin-right: 2em;
+  }
 }
+
+
+
+
+
+
+
+
+
 
 
 
