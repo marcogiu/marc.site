@@ -369,31 +369,30 @@ header {
 .works {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
 .card {
+  width: 45vw;
+  height: 60vh;
   background-color: transparent;
-  width: 45em;
-  height: 40em;
   perspective: 100em;
-  margin-left: 5em;
-  margin-right: 5em;
   border-radius: 1.5em;
   
 }
 
 .img1 , .img2  {
-  width: 45em;
-  height: 40em;
+  width: 45vw;
+  height: 60vh;
   object-fit: cover;
+  object-position: center;
   border-radius: 1.5em;
   border: 2px solid #0d0d0d;
 }
 
 
-.card-content {
+.card-content { 
   position: relative;
   width: 100%;
   height: 100%;
@@ -574,6 +573,7 @@ header {
 }
 
 .tab {
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -785,7 +785,8 @@ and (max-width: 500px) {
 
   .logo {
     width: 4em;
-    margin-left: -10em;
+    position: relative;
+    right: 35vw;
   }
   
   .header-link {
@@ -794,7 +795,8 @@ and (max-width: 500px) {
    
   .hamburger {
     display: inline-block;
-    margin-right: -2em;
+    position: relative;
+    left: 30vw;
   }
   
   .hamburger:hover {
@@ -885,7 +887,6 @@ and (max-width: 500px) {
   }
 
   .content {
-    border: 2px solid red;
     display: flex;
     flex-direction: column-reverse;
     height: 100%;
@@ -894,12 +895,11 @@ and (max-width: 500px) {
   }
 
   .description p {
-    border: 2px solid red;
-    font-size: 1.8em;
-    margin-left: 15%;
-    margin-top: 5%;
+    font-size: 4vw;
+    position: relative;
+    left: 10%;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 3vh;
   }
 
   .link-description {
@@ -911,20 +911,23 @@ and (max-width: 500px) {
   }
 
   .profile-picture {
-    border: 2px solid red;
-    max-width: 70%;
+    max-width: 40vw;
+    max-height: 25vh;
+    position: relative;
+    right: 15%;
+    top: -20%;
     border-radius: 2em;
     object-fit: cover;
     object-position: left;
   }
 
   .button-content {
-    border: 2px solid red;
-    
-    margin-top: 5%;
     width: 5em;
-    font-size: 1.3em;
+    font-size: 4vw;
     padding: 7px 12px;
+    position: relative;
+    top: 35vh;
+    left: 10vw;
   }
 
   /*    ARROW-DIVIDE    */
@@ -953,15 +956,24 @@ and (max-width: 500px) {
   .works {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 100%;
+    justify-content: space-around;
+    width: 95vw;
+    height: 75vh;
     align-items: center;
     gap: 2em;
   }
   
   .card {
-    max-width: 20em;
-    height: 15em;
+    width: 60vw;
+    height: 40vh;
+  }
+
+  .img1 , .img2  {
+    width: 60vw;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 1.5em;
+    border: 2px solid black;
   }
 
   .card-content-back h1 {
@@ -981,12 +993,6 @@ and (max-width: 500px) {
     width: 2.5em;
     margin: -5px;
   }
-  
-  .img1 , .img2 {
-    width: 20em;
-    height: 15em;
-  }
-
 
   /*   SECTION3-SKILLS     */
 
@@ -1007,23 +1013,23 @@ and (max-width: 500px) {
   }
 
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    top: -14em;
-    left: -12.5em;
+    top: -30vh;
+    left: -30vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    top: -14em;
-    left: 5em;
+    top: -30vh;
+    left: 12.5vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    left: -12.5em;
-    top: -2em;
+    left: -40vw;
+    top: -2vh;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 5em;
-    top: -2em;
+    left: 12.5vw;
+    top: -2vh;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
