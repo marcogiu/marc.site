@@ -18,11 +18,11 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: fit-content;
+  height: 15vh;
 }
 
 .logo {
-  width: 15%;
+  width: 10%;
   margin: 5%;
 }
 
@@ -203,6 +203,7 @@ header {
   opacity: 0;
   z-index: 1;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -251,19 +252,20 @@ header {
 
 .description {
   position: relative;
-  top: -5%;
-  left: -5%;
+  right: 4vw;
+  bottom: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: all 4s ease-in;
 }
 
 .description p {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: 2.3em;
-  width: 30vw;
+  font-size: 1.5vw;
+  width: 35vw;
   text-align: start;
   line-height: 1.4em;
 }
@@ -307,7 +309,7 @@ header {
 .divide {
   position: relative;
   z-index: 0;
-  height: 11vh;
+  height: fit-content;
 }
 
 .arrow {
