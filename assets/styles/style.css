@@ -18,11 +18,11 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 15vh;
+  height: fit-content;
 }
 
 .logo {
-  width: 10em;
+  width: 6vw;
   margin-left: 10em;
 }
 
@@ -130,7 +130,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   height: 75vh;
-  width: 100%;
 }
 
 .section1 h3 {
@@ -150,7 +149,7 @@ header {
 }
 
 .icon {
-  width: 4em;
+  width: 3vw;
 }
 
 .icon:hover {
@@ -166,7 +165,7 @@ header {
 
 .profile-picture {
   margin: auto;
-  max-width: 35em;
+  width: 20vw;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -213,16 +212,18 @@ header {
 .popup {
   margin: auto;
   padding: 8em;
-  width: 90em;
+  width: 80vw;
+  height: 60vh;
   background-image: url("../img/about-me.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   border-radius: 5px;
   position: relative;
   top: 10%;
   z-index: 5;
   transition: all 5s ease-in-out;
+  overflow: scroll;
 }
 
 .content {
@@ -251,8 +252,8 @@ header {
 
 .description {
   position: relative;
-  top: -5em;
-  left: -3em;
+  top: -5%;
+  left: -5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -263,7 +264,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 2.3em;
-  width: 20em;
+  width: 30vw;
   text-align: start;
   line-height: 1.4em;
 }
@@ -580,8 +581,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20em;
-  height: 15em;
+  width: fit-content;
   transform: translate(-100%, -100%) scale(0);
   transition: all 0.3s;
   opacity: 0;
@@ -594,36 +594,36 @@ header {
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-  top: -20vh;
-  left: -25vw;
+  top: -24vh;
+  left: -20vw;
   transition-delay: 0s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-  top: -20vh;
-  left: 25vw;
+  top: -24vh;
+  left: 28vw;
   transition-delay: 0.125s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-  left: -25vw;
+  left: -20vw;
   transition-delay: 0.25s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-  left: 25vw;
+  left: 28vw;
   transition-delay: 0.375s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
   top: 20vh;
-  left: -25vw;
+  left: -20vw;
   transition-delay: 0.5s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-  top: 20vh;
-  left: 25vw;
+  top: 22vh;
+  left: 28vw;
   transition-delay: 0.625s;
 }
 
@@ -687,7 +687,7 @@ header {
 }
 
 .contact textarea {
-  height: 35vh;
+  height: 30vh;
   resize: none;
 }
 
@@ -741,13 +741,17 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 20vh;
+  height: max-content;
   width: 100%;
 }
 
+footer .icon {
+  width: 2vw;
+}
+
 .footer-img {
-  width: 50px;
-  margin-right: 2em;
+  padding: 4px;
+  width: 6vw;
 }
 
 .link-footer {
@@ -762,18 +766,12 @@ footer p {
   font-size: 1.6em;
 }
 
-.sub-img {
-  display: none;
-  position: relative;
-}
-
 .right-footer {
   margin-right: 2em;
 }
 
 
 @media screen 
-and (min-width: 320px) 
 and (max-width: 500px) {
 
   /*    HEADER     */
@@ -1011,36 +1009,17 @@ and (max-width: 500px) {
     font-size: 1.5em;
   }
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    top: -20vh;
-    left: -30vw;
-  }
-  
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    top: -20vh;
-    left: 25vw;
+    left: 100%;
   }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    left: -30vw;
-  }
-  
+
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 25vw;
+    left: 100%;
   }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
-    top: 20vh;
-    left: -30vw;
-  }
-  
+
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-    top: 20vh;
-    left: 25vw;
+    left: 100%;
   }
-
-  
-
 
   /*   SECTION4-CONTACT     */
 
@@ -1072,7 +1051,7 @@ and (max-width: 500px) {
   }
   
   .contact textarea {
-    height: 40vh;
+    height: 30vh;
   }
   
   .contact input,
@@ -1134,22 +1113,417 @@ and (max-width: 500px) {
 and (min-width: 501px) 
 and (max-width: 768px) {
 
+  /*   HEADER    */
+  header {
+    height: 12vh;
+  }
+
+  .logo {
+    width: 4em;
+    position: relative;
+    right: 35vw;
+  }
+  
+  .header-link {
+    display: none;
+  }
+   
+  .hamburger {
+    display: inline-block;
+    position: relative;
+    left: 30vw;
+  }
+  
+  .hamburger:hover {
+    color: #f9f4ef;
+  }
+  
+  .link-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+  
+  .link2 {
+    text-decoration: none;
+    color: #020826;
+    font-size: 3.2em;
+  }
+  
+  .link2:hover {
+    color: #f25042;
+  }
+  
+  .header-overlay {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 6;
+  }
+  
+  .header-overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup0 {
+    padding: 5em;
+    background: #eaddcf;
+    border-radius: 0.5em;
+    position: relative;
+    transition: all 3s ease-in-out;
+  }
+  
+  .popup0 .close-menu {
+    position: absolute;
+    top: 0.1em;
+    right: 0.3em;
+    transition: all 200ms;
+    font-size: 6em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #020826;
+  }
+  
+  .popup0 .close-menu:hover {
+    color: #f25042;
+  }
+
+  /* SECTION1    */
+
+  .section1 {
+    height: 76vh;
+  }
+  .right-sidebar {
+    display: none;
+  }
+
+    /*    POPUP-ABOUT-ME   */
+
+    .popup {
+      padding: 1em;
+      max-width: 85vw;
+      height: 80vh;
+      background-image: url("../img/about-me-mid.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: 5em;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .description p {
+      font-size: 3vw;
+      width: 35vw;
+      position: relative;
+      top: -35%;
+      left: 8%;
+      text-align: left;
+      line-height: 3vh;
+    }
+  
+    .link-description {
+      color: #f25042;
+    }
+    
+    .link-description:hover {
+      color: #fffffe;
+    }
+  
+    .profile-picture {
+      width: 35vw;
+      height: 50vh;
+      position: relative;
+      left: 20%;
+      top: 40%;
+      border-radius: 2em;
+      object-fit: cover;
+      object-position: left;
+    }
+  
+    .button-content {
+      width: 20vw;
+      font-size: 4vw;
+      padding: 9px 14px;
+      position: relative;
+      top: 45%;
+      left: 50%;
+    }
+
+  /*     SECTION3-SKILLS    */
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
+    left: 110%;
+  }
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
+    left: 110%;
+  }
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
+    left: 110%;
+  }
+
+    /*   SECTION4-CONTACT     */
+
+    .section4 {
+      height: 100vh;
+    }
+  
+    .left-contact {
+      display: none;
+    }
+  
+    .contact-form {
+      width: 90%;
+    }
+  
+    .first-line {
+      margin: 2em auto;
+      max-width: 25em;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.8em;
+    }
+  
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    
+    .contact textarea {
+      height: 30vh;
+    }
+    
+    .contact input,
+    .contact textarea {
+      font-size: 1.2em;
+      width: 50vw;
+    }
+     
+    .button-contact {
+      margin-top: 0;
+      gap: 2em;
+    }
+    
+    .button-contact .button {
+      width: 8em;
+      font-size: 1.5em;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
 }
 
 @media screen 
 and (min-width: 769px) 
 and (max-width: 1024px) {
+  
+  /*   HEADER    */
+  header {
+    height: 14vh;
+  }
+
+  /* SECTION1    */
+
+  .section1 {
+    height: 74vh;
+  }
+
+    /*    POPUP-ABOUT-ME   */
+
+    .popup {
+      padding: 1em;
+      max-width: 85vw;
+      height: 80vh;
+      background-image: url("../img/about-me.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: 5em;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .description p {
+      font-size: 2vw;
+      width: 35vw;
+      position: relative;
+      top: -50%;
+      left: 8%;
+      text-align: left;
+      line-height: 3.5vh;
+    }
+  
+    .link-description {
+      color: #f25042;
+    }
+    
+    .link-description:hover {
+      color: #fffffe;
+    }
+  
+    .profile-picture {
+      width: 35vw;
+      height: 50vh;
+      position: relative;
+      left: 20%;
+      top: 50%;
+      border-radius: 2em;
+      object-fit: cover;
+      object-position: left;
+    }
+  
+    .button-content {
+      width: 20vw;
+      font-size: 4vw;
+      padding: 9px 14px;
+      position: relative;
+      top: 55%;
+      left: 50%;
+    }
+
+  /*     SECTION3-SKILLS    */
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
+    left: 110%;
+  }
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
+    left: 110%;
+  }
+
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
+    left: 110%;
+  }
+
+    /*   SECTION4-CONTACT     */
+
+    .section4 {
+      height: 100vh;
+    }
+  
+    .left-contact {
+      display: none;
+    }
+  
+    .contact-form {
+      width: 90%;
+    }
+  
+    .first-line {
+      margin: 2em auto;
+      max-width: 25em;
+    }
+  
+    .contact-form h2 {
+      font-size: 1.8em;
+    }
+  
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+    
+    .contact textarea {
+      height: 30vh;
+    }
+    
+    .contact input,
+    .contact textarea {
+      font-size: 1.2em;
+      width: 50vw;
+    }
+     
+    .button-contact {
+      margin-top: 0;
+      gap: 2em;
+    }
+    
+    .button-contact .button {
+      width: 8em;
+      font-size: 1.5em;
+      padding: 6px 12px;
+      border-radius: 20px;
+    }
+
 
 }
 
-@media screen 
-and (min-width: 1025px) 
-and (max-width: 1200px) {
-
-}
 
 @media screen 
-and (min-width: 1201px)  {
+and (min-width: 1025px)  {
+      /*   SECTION4-CONTACT     */
+
+      .section4 {
+        height: 100vh;
+      }
+    
+      .contact-form {
+        width: 50%;
+      }
+    
+      .first-line {
+        margin: 2em auto;
+        max-width: 25vw;
+      }
+    
+      .contact-form h2 {
+        font-size: 3vh;
+      }
+    
+      .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+      }
+      
+      .contact textarea {
+        height: 30vh;
+      }
+      
+      .contact input,
+      .contact textarea {
+        font-size: 1.2em;
+        width: 25vw;
+      }
+       
+      .button-contact {
+        margin-top: 0;
+        gap: 2em;
+      }
+      
+      .button-contact .button {
+        width: 8em;
+        font-size: 1.5em;
+        padding: 6px 12px;
+        border-radius: 20px;
+      }
 
 }
 
