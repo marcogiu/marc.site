@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-  width: 10%;
+  width: 5vw;
   margin: 5%;
 }
 
@@ -779,13 +779,13 @@ and (max-width: 500px) {
   /*    HEADER     */
 
   header {
-    height: 10vh;
+    height: fit-content;
   }
 
   .logo {
-    width: 4em;
+    width: 6em;
     position: relative;
-    right: 35vw;
+    right: 10vw;
   }
   
   .header-link {
@@ -1121,9 +1121,9 @@ and (max-width: 768px) {
   }
 
   .logo {
-    width: 4em;
+    width: 5em;
     position: relative;
-    right: 35vw;
+    right: 13vw;
   }
   
   .header-link {
