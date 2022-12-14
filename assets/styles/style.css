@@ -494,8 +494,7 @@ header {
 }
 
 .section3 .section-title {
-  margin-top: 10vh;
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 
 .section3 a {
@@ -505,20 +504,20 @@ header {
 
 
 .skill-img {
-  height: 23em;
+  height: 25vh;
 }
 
 .sub-skill {
-  font-size: 3em;
+  font-size: 3vw;
 }
 
 .icon-skill {
-  width: 10em;
+  width: 8vw;
 }
 
 .skill-menu {
   position: relative;
-  top: -7em;
+  top: -5em;
   z-index: 0;
 }
 
@@ -533,15 +532,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
- transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .style p {
-  font-size: 2.5em;
+  font-size: 2.5vw;
 }
 
 .toggle:checked + .style {
-  transform: translateY(-5em) scale(0.4);
+  transform: translateY(-5vw) scale(0.4);
 }
 
 .skill-menu input[type=checkbox] + label:before {
@@ -595,36 +594,36 @@ header {
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-  top: -24vh;
-  left: -20vw;
+  top: -30vh;
+  left: -10vw;
   transition-delay: 0s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-  top: -24vh;
-  left: 28vw;
+  top: -30vh;
+  left: 25vh;
   transition-delay: 0.125s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-  left: -20vw;
+  left: -25vw;
   transition-delay: 0.25s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-  left: 28vw;
+  left: 25vw;
   transition-delay: 0.375s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
-  top: 20vh;
-  left: -20vw;
+  top: 15vh;
+  left: -10vw;
   transition-delay: 0.5s;
 }
 
 .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-  top: 22vh;
-  left: 28vw;
+  top: 18vh;
+  left: 11.5vw;
   transition-delay: 0.625s;
 }
 
@@ -894,9 +893,11 @@ and (max-width: 500px) {
   }
 
   .description p {
-    font-size: 4vw;
+    font-size: 3vw;
+    font-weight: bold;
     position: relative;
-    left: 10%;
+    top: -25%;
+    left: 8%;
     text-align: center;
     line-height: 3vh;
   }
@@ -910,11 +911,11 @@ and (max-width: 500px) {
   }
 
   .profile-picture {
-    max-width: 40vw;
-    max-height: 25vh;
+    width: 30vw;
+    height: 40vh;
     position: relative;
-    right: 15%;
-    top: -20%;
+    right: -15%;
+    top: 50%;
     border-radius: 2em;
     object-fit: cover;
     object-position: left;
@@ -925,8 +926,8 @@ and (max-width: 500px) {
     font-size: 4vw;
     padding: 7px 12px;
     position: relative;
-    top: 35vh;
-    left: 10vw;
+    top: 75%;
+    left: 40%;
   }
 
   /*    ARROW-DIVIDE    */
@@ -997,29 +998,44 @@ and (max-width: 500px) {
     height: 92vh;
   }
 
-  .skill-img {
-    height: 20em;
-  }
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
+  top: -15vh;
+  left: -5vw;
+  transition-delay: 0s;
+}
 
-  .icon-skill {
-    width: 15vw;
-  }  
-  
-  .sub-skill {
-    font-size: 1.5em;
-  }
+.skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
+  top: -15vh;
+  left: 20vw;
+  transition-delay: 0.125s;
+}
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    left: 100%;
-  }
+.skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
+  top: 5vh;
+  left: -20vw;
+  transition-delay: 0.25s;
+}
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 100%;
-  }
+.skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
+  top: 5vh;
+  left: 30vw;
+  transition-delay: 0.375s;
+}
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-    left: 100%;
-  }
+.skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
+  top: 25vh;
+  left: -5vw;
+  transition-delay: 0.5s;
+}
+
+.skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
+  top: 28vh;
+  left: 20vw;
+  transition-delay: 0.625s;
+}
+
+
+
 
   /*   SECTION4-CONTACT     */
 
@@ -1235,7 +1251,7 @@ and (max-width: 768px) {
       top: -35%;
       left: 8%;
       text-align: left;
-      line-height: 3vh;
+      line-height: 3.5vh;
     }
   
     .link-description {
@@ -1251,34 +1267,24 @@ and (max-width: 768px) {
       height: 50vh;
       position: relative;
       left: 20%;
-      top: 40%;
+      top: 50%;
       border-radius: 2em;
       object-fit: cover;
       object-position: left;
     }
   
     .button-content {
-      width: 20vw;
-      font-size: 4vw;
-      padding: 9px 14px;
-      position: relative;
-      top: 45%;
-      left: 50%;
+      width: 10vw;
+      font-size: 2vw;
+      padding: 2% 2%;
+      position: absolute;
+      top: 70vh;
+      left: 60vw;
     }
 
   /*     SECTION3-SKILLS    */
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    left: 110%;
-  }
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    left: 110%;
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-    left: 110%;
-  }
 
     /*   SECTION4-CONTACT     */
 
@@ -1417,34 +1423,7 @@ and (max-width: 1024px) {
 
   /*     SECTION3-SKILLS    */
 
-  .icon-skill {
-    width: 8vw;
-  }
 
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    right: 20%;
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    left: 150%;
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    right: 20%;
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    right: 50%;
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
-    right: 20%;
-
-  }
-
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-    left: 150%;
-  }
 
     /*   SECTION4-CONTACT     */
 
