@@ -798,44 +798,7 @@ header {
 (min-width: 320px) and
 (max-width: 399px) {
   .icon-skill {
-    width: 20vw;
-  }
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
-    top: -20vh;
-    left: -10vw;
-  }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
-    top: -20vh;
-    left: 15vh;
-  }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
-    top: 5vh;
-    left: -25vw;
-  }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
-    top: 5vh;
-    left: 45vw;
-  }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
-    top: 20vh;
-    left: -10vw;
-  }
-  
-  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
-    top: 23vh;
-    left: 30vw;
-  }
-}
-
-@media screen and
-(min-width: 400px) and
-(max-width: 500px) {
-  .icon-skill {
-    width: 15vw;
+    width: 5em;
   }
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
     top: -20vh;
@@ -869,10 +832,47 @@ header {
 }
 
 @media screen and
+(min-width: 400px) and
+(max-width: 500px) {
+  .icon-skill {
+    width: 6em;
+  }
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
+    top: -20vh;
+    left: -10vw;
+  }
+  
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
+    top: -20vh;
+    left: 20vh;
+  }
+  
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
+    top: 5vh;
+    left: -25vw;
+  }
+  
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
+    top: 5vh;
+    left: 35vw;
+  }
+  
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
+    top: 20vh;
+    left: -10vw;
+  }
+  
+  .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
+    top: 23vh;
+    left: 20vw;
+  }
+}
+
+@media screen and
 (min-width: 501px) and
 (max-width: 767px) { 
   .icon-skill {
-    width: 15vw;
+    width: 6em;
   }
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(1) {
     top: -20vh;
@@ -891,7 +891,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
     top: 5vh;
-    left: 40vw;
+    left: 30vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
@@ -901,7 +901,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(6) {
     top: 25vh;
-    left: 30vw;
+    left: 20vw;
   }
 }
 
@@ -939,6 +939,7 @@ header {
 
 @media screen and 
 (max-height: 500px) {
+
   .section3 .section-title {
     margin-bottom: 2em;
   }  
