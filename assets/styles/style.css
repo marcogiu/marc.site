@@ -124,6 +124,9 @@ header {
 @media screen and
 (min-width: 320px) and
 (max-width: 600px) {
+  header {
+    height: 10vh;
+  }
   .header-link {
     display: none;
   }
@@ -330,6 +333,14 @@ header {
 
 .button-content:hover {
   background-color: #716040;
+}
+
+@media screen and
+(min-width: 320px) and
+(max-width: 600px) {
+  .section1 {
+    height: 80vh;
+  }
 }
 
 @media screen and
