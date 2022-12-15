@@ -819,7 +819,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
     top: 5vh;
-    left: 40vw;
+    left: 50vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
