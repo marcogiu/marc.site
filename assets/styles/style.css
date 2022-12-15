@@ -1036,6 +1036,31 @@ header {
   background-color: #000000;
 }
 
+@media screen and
+(min-width: 320px) and
+(max-width: 768px) {
+  .left-contact {
+    display: none;
+  }
+  .contact-form {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .first-line {
+    margin: 2vh auto;
+  }
+  
+  .contact-form h2 {
+    font-size: 5vw;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 65vw;
+  }
+}
+
 /*     FOOTER     */
 
 footer {
@@ -1048,8 +1073,23 @@ footer {
   width: 100%;
 }
 
+.left-footer {
+  border: 2px solid rebeccapurple;
+  width: 33%;
+}
+
+.center-footer {
+  border: 2px solid rebeccapurple;
+  width: 33%;
+}
+
+.right-footer {
+  border: 2px solid rebeccapurple;
+  width: 33%;
+}
+
 footer .icon {
-  width: 2vw;
+  width: vw;
 }
 
 .footer-img {
@@ -1066,9 +1106,9 @@ footer .icon {
 }
 
 footer p {
-  font-size: 1.6em;
+  font-size: 2vw;
 }
 
-.right-footer {
-  margin-right: 2em;
-}
+
+
+
