@@ -415,6 +415,13 @@ header {
   }
 }
 
+@media screen and 
+(max-height: 500px) {
+  .popup {
+    overflow: scroll;
+  }
+}
+
 /*  ARROW DIVIDE   */
 
 .divide {
@@ -930,6 +937,19 @@ header {
   }
 }
 
+@media screen and 
+(max-height: 500px) {
+  .section3 .section-title {
+    margin-bottom: 2em;
+  }  
+
+  .skill-menu {
+    position: relative;
+    top: 0;
+    z-index: 0;
+  }
+}
+
 /*    SECTION4-CONTACT     */
 
 .section4 {
@@ -1058,6 +1078,45 @@ header {
   .contact input,
   .contact textarea {
     width: 65vw;
+  }
+  
+}
+
+@media screen and 
+(max-height: 675px) {
+  .left-contact {
+    display: none;
+  }
+  .contact-form {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
+  }
+  
+  .first-line {
+    margin: 2vh auto;
+  }
+  
+  .contact-form h2 {
+    font-size: 2.5vw;
+  }
+
+  .contact input {
+    width: 25vw;
+    height: 11vh;
+  }
+
+  .contact textarea {
+    width: 65vw;
+    height: 25vh;
+
   }
 }
 
