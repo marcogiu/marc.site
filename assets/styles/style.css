@@ -62,7 +62,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5em;
+  gap: 2.5em;
 }
 
 .link2 {
@@ -95,7 +95,7 @@ header {
 }
 
 .popup0 {
-  padding: 8em;
+  padding: 6em;
   background: #eaddcf;
   border-radius: 0.5em;
   position: relative;
@@ -143,6 +143,7 @@ header {
     width: 10vw;
   }
 }
+
 
 /*  SECTION1   */
 
@@ -421,6 +422,7 @@ header {
     overflow: scroll;
   }
 }
+
 
 /*  ARROW DIVIDE   */
 
@@ -946,8 +948,12 @@ header {
 
   .skill-menu {
     position: relative;
-    top: 0;
+    top: -5vh;
     z-index: 0;
+  }
+
+  .icon-skill {
+    width: 4em;
   }
 }
 
@@ -1098,7 +1104,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3vh;
+    gap: 2vh;
   }
   
   .first-line {
@@ -1106,7 +1112,7 @@ header {
   }
   
   .contact-form h2 {
-    font-size: 2.5vw;
+    font-size: 7vw;
   }
 
   .contact input {
