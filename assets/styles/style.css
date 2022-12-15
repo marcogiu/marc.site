@@ -809,7 +809,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
     top: -20vh;
-    left: 20vh;
+    left: 15vh;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
@@ -819,7 +819,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
     top: 5vh;
-    left: 50vw;
+    left: 40vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
@@ -851,7 +851,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
     top: 5vh;
-    left: -25vw;
+    left: -20vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
