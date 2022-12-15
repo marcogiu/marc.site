@@ -1069,27 +1069,16 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: max-content;
-  width: 100%;
+  height: 20vh;
 }
 
-.left-footer {
-  border: 2px solid rebeccapurple;
+.left-footer, .center-footer, .right-footer {
   width: 33%;
 }
 
-.center-footer {
-  border: 2px solid rebeccapurple;
-  width: 33%;
-}
-
-.right-footer {
-  border: 2px solid rebeccapurple;
-  width: 33%;
-}
 
 footer .icon {
-  width: vw;
+  width: 5vw;
 }
 
 .footer-img {
@@ -1107,6 +1096,30 @@ footer .icon {
 
 footer p {
   font-size: 2vw;
+}
+
+@media screen and
+(min-width: 320px) and
+(max-width: 768px) {
+  footer {
+    height: 15vh;
+  }
+  footer .icon {
+    width: 5vw;
+  }
+  
+  .footer-img {
+    width: 10vw;
+  }
+  
+  .link-footer {
+    gap: 5px;
+  }
+  
+  footer p {
+    font-size: 2.5vw;
+  }
+
 }
 
 
