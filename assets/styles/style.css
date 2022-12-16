@@ -894,7 +894,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(2) {
     top: -20vh;
-    left: 25vh;
+    left: 20vh;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(3) {
@@ -904,7 +904,7 @@ header {
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(4) {
     top: 5vh;
-    left: 30vw;
+    left: 35vw;
   }
   
   .skill-menu > .toggle:checked ~ .tab:nth-of-type(5) {
@@ -1135,6 +1135,38 @@ header {
     width: 65vw;
     height: 25vh;
 
+  }
+}
+
+@media screen and 
+(max-height: 500px) {
+  .left-contact {
+    display: none;
+  }
+  .contact-form {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh;
+  }
+  
+  .first-line {
+    margin: 2vh auto;
+  }
+  
+  .contact-form h2 {
+    font-size: 2.5vw;
+  }
+
+  .contact input {
+    width: 25vw;
+    height: 11vh;
   }
 }
 
