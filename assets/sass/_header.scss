@@ -1,0 +1,124 @@
+header {
+  background-color: $color2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 15vh;
+}
+
+.logo {
+    width: 6vw;
+    margin: 5%;
+}
+  
+.header-link {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+  
+.link {
+  text-decoration: none;
+  color: $color3;
+  font-size: 32px;
+  &:hover {
+    color: $color5;
+  }
+}
+
+.hamburger {
+  font-size: 4em;
+  margin-right: 2em;
+  color: $color3;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: none;
+  &:hover {
+    color: $color1;
+  }
+}
+
+.link-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.link2 {
+  text-decoration: none;
+  color: $color3;
+  font-size: 3.2em;
+  &:hover {
+    color: $color4;
+  }
+}
+
+.header-overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 6;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.popup0 {
+  padding: 6em;
+  background: $color6;
+  border-radius: 0.5em;
+  position: relative;
+  transition: all 3s ease-in-out;
+  .close-menu {
+    position: absolute;
+    top: 0.1em;
+    right: 0.3em;
+    transition: all 200ms;
+    font-size: 6em;
+    font-weight: bold;
+    text-decoration: none;
+    color: $color3;
+    &:hover {
+      color: $color4;
+    }
+  }
+}
+
+@media screen and
+(min-width: 320px) and
+(max-width: 600px) {
+  header {
+    height: 10vh;
+  }
+  .header-link {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 90%;
+  }
+
+  .link-logo {
+    position: relative;
+    left: -40vw;
+  }
+
+  .logo {
+    width: 10vw;
+  }
+}

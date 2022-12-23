@@ -1,0 +1,54 @@
+footer {
+  background-color: $color2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+  .icon {
+    width: 5vw;
+  }
+  p {
+  font-size: 2vw;
+  }
+}
+
+.left-footer, .center-footer, .right-footer {
+  width: 33%;
+}
+
+.footer-img {
+  margin-left: 40%;
+  padding: 4px;
+  width: 6vw;
+}
+
+.link-footer {
+  margin-left: 2em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media screen and
+(min-width: 320px) and
+(max-width: 768px) {
+  footer {
+    height: 15vh;
+    .icon {
+      width: 5vw;
+    }
+    p {
+      font-size: 2.5vw;
+    }
+  }
+  
+  .footer-img {
+    width: 10vw;
+  }
+  
+  .link-footer {
+    gap: 5px;
+  }
+}

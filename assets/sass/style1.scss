@@ -1,0 +1,40 @@
+$font1: 'Bebas Neue', cursive;
+$font2: 'Roboto', sans-serif;
+$color1: #f9f4ef;
+$color2: #716040;
+$color3: #020826;
+$color4: #f25042;
+$color5: #fffffe;
+$color6: #eaddcf;
+$color7: #2a2a2a;
+$color8: #0d0d0d;
+$color9: #eff0f3;
+$color10: #000000;
+
+/*   GENERAL STYLE   */
+@import 'generalstyles';
+
+/*   HEADER    */
+@import 'header'; 
+
+/*  SECTION1    */
+@import 'section1'; 
+
+/*   POPUP-ABOUT-ME    */
+@import 'popupaboutme'; 
+
+/*   ARROW DIVIDE   */
+@import 'arrow-divide'; 
+
+/* SECTION2-WORKS    */
+@import 'section2'; 
+
+/*  SECTION3-SKILLS  */
+@import 'section3';
+
+/*   SECTION4-CONTACT   */
+@import 'section4';
+
+/*     FOOTER    */
+@import 'footer';
+
