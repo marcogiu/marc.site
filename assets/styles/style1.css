@@ -962,11 +962,14 @@ header {
   flex-direction: column;
   gap: 2em;
 }
+
 .contact textarea {
   height: 30vh;
   resize: none;
 }
-.contact textarea input {
+
+.contact input,
+.contact textarea {
   background-color: #eff0f3;
   font-family: "Raleway", sans-serif;
   font-size: 2em;
@@ -975,7 +978,9 @@ header {
   padding: 10px;
   border-radius: 7px;
 }
-.contact textarea input:hover {
+
+.contact input:hover,
+.contact textarea:hover {
   box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.75);
 }
 
