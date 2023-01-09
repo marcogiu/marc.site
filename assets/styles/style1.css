@@ -1094,10 +1094,12 @@ footer {
   height: 20vh;
 }
 footer .icon {
-  width: 5vw;
+  width: 3vw;
 }
 footer p {
-  font-size: 2vw;
+  text-align: right;
+  font-size: 1.5em;
+  margin-right: 2vw;
 }
 
 .left-footer, .center-footer, .right-footer {
@@ -1126,7 +1128,7 @@ footer p {
     width: 5vw;
   }
   footer p {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .footer-img {
     width: 10vw;
